@@ -7,11 +7,16 @@
 header {
   height: 5rem;
   background-color: gray;
+  padding: 1rem;
 }
-
-h3 {}
 
 nav ul {
   display: flex;
   justify-content: flex-end;
+
+}
+
+li {
+  list-style-type: none;
+  margin: 0 0.5rem;
 }

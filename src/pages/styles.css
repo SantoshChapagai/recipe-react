@@ -1,0 +1,12 @@
+.home {
+  background-color: black;
+  color: white;
+  height: 20rem;
+  margin: 0 15px;
+}
+
+h1,
+p,
+a {
+  padding: 3rem;
+}
