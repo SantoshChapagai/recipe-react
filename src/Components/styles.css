@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 5rem;
+  background-color: gray;
+}
+
+h3 {}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
