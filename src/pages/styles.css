@@ -5,8 +5,22 @@
   margin: 0 15px;
 }
 
-h1,
-p,
-a {
+.home h1,
+.home p,
+.home a {
   padding: 3rem;
+}
+
+.home_cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 1rem;
+  width: 15rem;
+}
+
+.card p {
+  margin: 1rem 0;
 }
