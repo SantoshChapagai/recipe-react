@@ -9,7 +9,7 @@ const Form = () => {
         <input type="text" id="name" name="name" />
         <label htmlFor="author">Author</label>
         <input type="text" id="author" name="author" />
-        <label htmlFor="country">recipie is from</label>
+        <label htmlFor="country">recipe is from</label>
         <select id="country" name="country">
           <Country />
         </select>
@@ -25,7 +25,7 @@ const Form = () => {
         </div>
         <label htmlFor='instruction'>Instructions</label>
         <textarea name="instruction" id="instruction" maxLength={1000} />
-        <button type="submit" id="post">Post recipie</button>
+        <button type="submit" id="post">Post recipe</button>
 
       </form>
 

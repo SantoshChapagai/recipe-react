@@ -8,8 +8,8 @@ const Home = () => {
     <div>
       <div className='home'>
         <h1>TasteIT</h1>
-        <p>TasteIT is a recipie app which allows to add and browse recipes</p>
-        <NavLink to='/recipies'>Browse recipes</NavLink>
+        <p>TasteIT is a recipe app which allows to add and browse recipes</p>
+        <NavLink to='/recipes'>Browse recipes</NavLink>
       </div>
       <div>
         <h2>Looking for recipes</h2>
@@ -17,13 +17,19 @@ const Home = () => {
       <div className='home_cards'>
         <div className='card'>
           <h4>Browse recipes</h4>
-          <p>Find the Awesome recipe across globes</p>
+          <p>Find the Awesome recipe across globes. You can search recipes based on name or country</p>
+          <NavLink to="/recipes">All recipes</NavLink>
         </div>
         <div className='card'>
           <h4>Add recipe</h4>
-          <p>Add recipe from your country</p>
+          <p>Add recipe from your country and help people to try different foods</p>
+          <NavLink to="/addrecipe">Add recipe</NavLink>
         </div>
-        <div className='card'></div>
+        <div className='card'>
+          <h4>More about the projects</h4>
+          <p>Visit our homepage</p>
+          <a href="/https:en.bc.fi/qualifications/full-stack-web-developer-program/">Business College Helsinki</a>
+        </div>
 
       </div>
 
