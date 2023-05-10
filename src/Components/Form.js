@@ -5,7 +5,7 @@ const Form = () => {
   return (
     <div className='form'>
       <form>
-        <h2>Add new recipe</h2>
+        <h4>Add new recipe</h4>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />
         <label htmlFor="author">Author</label>
@@ -14,9 +14,11 @@ const Form = () => {
         <Country />
         <label htmlFor="description">Description</label>
         <textarea name="description" id="description" maxLength={1000} />
-        <div>
+        <label for="image">Image</label>
+        <input type="url" id="image" name="image" alt="imagename" />
+        <div className='ingredient_holder'>
+          <p>Ingredients</p>
           <div className='ingredients'>
-            <p>Ingredients</p>
             <div className='quantity'>
               <label htmlFor='quantity'>Quantity</label>
               <input type="text" id="quantity" name="quantity" />

@@ -28,6 +28,8 @@ li {
   justify-content: flex-start;
   align-items: center;
   margin-top: 2rem;
+  font-family: 'Raleway', sans-serif;
+  ;
 }
 
 
@@ -36,11 +38,13 @@ textarea,
 select {
   width: 15rem;
   border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
 }
 
 input,
 select {
   height: 2rem;
+  border: 1px solid black
 }
 
 textarea {
@@ -54,13 +58,40 @@ label {
 
 button {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 5px;
+}
+
+form p {
+  margin: 0.5rem 0;
 }
 
 .ingredients {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  height: 5rem;
 }
 
 .ingredients input {
-  width: 6rem;
+  width: 7rem;
+}
+
+.ingredient_holder button {
+  height: 2rem;
+  width: 5rem;
+  display: flex;
+  background-color: white;
+  border: 1px solid green;
+  color: green;
+}
+
+#post {
+  height: 2rem;
+  width: 5rem;
+  border: none;
+  background-color: green;
+  color: white;
 }
