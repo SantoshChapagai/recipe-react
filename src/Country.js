@@ -2,7 +2,7 @@ import React from 'react';
 
 const Country = () => {
   return (
-    <div>
+    <select id="country" name="country">
       <option value="Afghanistan">Afghanistan</option>
       <option value="Åland Islands">Åland Islands</option>
       <option value="Albania">Albania</option>
@@ -247,7 +247,7 @@ const Country = () => {
       <option value="Yemen">Yemen</option>
       <option value="Zambia">Zambia</option>
       <option value="Zimbabwe">Zimbabwe</option>
-    </div>
+    </select>
   );
 };
 
