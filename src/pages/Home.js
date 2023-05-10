@@ -1,18 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './styles.css'
+import './css/styles.css'
 
 
 const Home = () => {
   return (
     <div>
       <div className='home'>
-        <h1>TasteIT</h1>
-        <p>TasteIT is a recipe app which allows to add and browse recipes</p>
-        <NavLink to='/recipes'>Browse recipes</NavLink>
+        <div className='container'>
+          <h1>TasteIT</h1>
+          <p>TasteIT is a recipe app which allows to add and browse recipes</p>
+          <NavLink to='/recipes'><button>Browse recipes</button></NavLink>
+        </div>
       </div>
       <div>
-        <h2>Looking for recipes</h2>
+        <h2>Looking for the recipes?</h2>
       </div>
       <div className='home_cards'>
         <div className='card'>

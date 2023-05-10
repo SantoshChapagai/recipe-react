@@ -1,0 +1,52 @@
+.home {
+  background-color: black;
+  color: white;
+  height: 20rem;
+  margin: 0 15px;
+}
+
+.container {
+  padding: 5rem;
+}
+
+.home h1,
+.home p,
+.home a {
+  padding: 1rem;
+}
+
+.container a button {
+  height: 3rem;
+  width: 8rem;
+  background-color: black;
+  border: 1px solid pink;
+  color: pink
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+
+h2 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.home_cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  margin: 1rem;
+  width: 18rem;
+  padding: 1rem;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px white;
+}
+
+.card p {
+  margin: 1rem 0;
+}
