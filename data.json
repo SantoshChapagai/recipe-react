@@ -1,15 +1,26 @@
 {
   "recipes": [
     {
-      "name": " ",
-      "author": " ",
-      "country": " ",
-      "description": " ",
-      "image": " ",
-      "quantity": null,
-      "ingredient": " ",
-      "instruction": " ",
+      "name": "tea",
+      "author": "Santosh",
+      "country": "Nepal",
+      "description": "tea with species and milk",
+      "image": "https://cdn.pixabay.com/photo/2015/09/09/18/17/cup-932303_1280.jpg",
+      "quantity": 1,
+      "ingredient": " milk",
+      "instruction": "boil and drink",
       "id": 1
+    },
+    {
+      "name": "lentis ",
+      "author": " Ram",
+      "country": "Nepal ",
+      "description": "lentis ",
+      "image": " ",
+      "quantity": "250g",
+      "ingredient": " butter, water, lentis, garlic, ginger, species",
+      "instruction": "use pressure cooker and cook in medium heat",
+      "id": 2
     }
   ]
 }

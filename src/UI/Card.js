@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({ recipe }) => {
   return (
     <div>
-      Card will be here.
+      <h2>{recipe.name}</h2>
+      <img src={recipe.image} alt={recipe.name} />
     </div>
   );
 };
