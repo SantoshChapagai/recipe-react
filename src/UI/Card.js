@@ -5,8 +5,8 @@ const Card = ({ recipe }) => {
   return (
     <div className='card_holder'>
       <div className='card'>
-        <h2>{recipe.name}</h2>
         <img src={recipe.image} alt={recipe.name} />
+        <h4>{recipe.name}</h4>
       </div>
     </div>
   );
