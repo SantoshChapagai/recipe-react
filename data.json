@@ -1,0 +1,12 @@
+{
+  "posts": [
+    {
+      "firstname": "Rohit",
+      "lastname": "Poudel",
+      "phone": "0378356",
+      "role": "other",
+      "message": "Send the data",
+      "id": 1
+    }
+  ]
+}

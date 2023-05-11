@@ -1,7 +1,7 @@
 import React from 'react';
 import Country from "../Country"
 
-const Form = () => {
+const Form = (click) => {
   return (
     <div className='form'>
       <form>
@@ -32,7 +32,7 @@ const Form = () => {
         </div>
         <label htmlFor='instruction'>Instructions</label>
         <textarea name="instruction" id="instruction" maxLength={1000} />
-        <button type="submit" id="post">Post recipe</button>
+        <button type="submit" id="post" onClick={click}>Post recipe</button>
 
       </form>
 
