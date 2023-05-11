@@ -30,7 +30,7 @@ const Home = () => {
         <div className='card'>
           <h4>More about the projects</h4>
           <p>Visit our homepage</p>
-          <a href="/https:en.bc.fi/qualifications/full-stack-web-developer-program/">Business College Helsinki</a>
+          <NavLink to="https://en.bc.fi/qualifications/full-stack-web-developer-program/">Business College Helsinki</NavLink>
         </div>
 
       </div>
