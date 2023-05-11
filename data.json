@@ -1,11 +1,14 @@
 {
-  "posts": [
+  "recipes": [
     {
-      "firstname": "Rohit",
-      "lastname": "Poudel",
-      "phone": "0378356",
-      "role": "other",
-      "message": "Send the data",
+      "name": " ",
+      "author": " ",
+      "country": " ",
+      "description": " ",
+      "image": " ",
+      "quantity": null,
+      "ingredient": " ",
+      "instruction": " ",
       "id": 1
     }
   ]
