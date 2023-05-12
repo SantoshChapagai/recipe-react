@@ -8,7 +8,7 @@ const Card = ({ recipe }) => {
       <div className='card'>
         <img src={recipe.image} alt={recipe.name} />
         <h4>{recipe.name}</h4>
-        <NavLink to={'/recipes/:singlerecipe'}>See more</NavLink>
+        <NavLink to={recipe}>See more</NavLink>
       </div>
     </div>
   );

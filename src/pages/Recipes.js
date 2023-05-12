@@ -6,6 +6,7 @@ import Card from '../UI/Card'
 const Recipes = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [searchInput, setSearchInput] = useState('');
   console.log(data);
   useEffect(() => {
     setIsLoading(true);
@@ -15,13 +16,22 @@ const Recipes = () => {
         setIsLoading(false);
       });
   }, []);
+  const searchInputHandler = (e) => {
+    setSearchInput(e.target.value)
+  }
+  const searchFilter = data.filter(recipes => {
+    return recipes.name.includes(searchInput)
+  })
 
   if (isLoading) {
     return <p>Loading...</p>
   }
   return (
     <div>
-      {data.map((recipe) => (
+      <div className='search'>
+        <input onChange={searchInputHandler} />
+      </div>
+      {searchFilter.map((recipe) => (
         <Card key={recipe.id}
           recipe={recipe}
         />
