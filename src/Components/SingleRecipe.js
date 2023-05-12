@@ -8,7 +8,7 @@ const SingleRecipe = () => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-
+  console.log(data)
   useEffect(() => {
     setIsLoading(true);
     axios.get(`http://localhost:4000/recipes/${params.singlerecipe}`)
@@ -23,6 +23,7 @@ const SingleRecipe = () => {
 
   return (
     <div>
+      <h2>Hello</h2>
       <img src={data.image} alt={data.name} />
       <button onClick={() => navigate(-1)}>Go back </button>
     </div>

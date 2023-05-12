@@ -1,6 +1,7 @@
 import React from 'react';
 import Country from "../Country"
 
+
 const Form = (click, submit) => {
   return (
     <div className='form'>
