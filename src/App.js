@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Recipes from './pages/Recipes';
 import AddRecipe from './pages/AddRecipe';
 import Header from './Components/Header';
+import SingleRecipe from './Components/SingleRecipe';
 const App = () => {
   return (
     <div className='app'>
@@ -13,6 +14,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/recipes' element={<Recipes />} />
           <Route path='/addrecipe' element={<AddRecipe />} />
+          <Route path="/recipes/:singlerecipe" element={<SingleRecipe />} />
         </Routes>
       </BrowserRouter>
     </div>

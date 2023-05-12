@@ -9,7 +9,6 @@ const Recipes = () => {
   console.log(data);
   useEffect(() => {
     setIsLoading(true);
-    setIsLoading(true);
     axios.get("http://localhost:4000/recipes")
       .then(res => {
         setData(res.data);
