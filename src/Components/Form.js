@@ -2,10 +2,11 @@ import React from 'react';
 import Country from "../Country"
 
 
-const Form = (click, submit) => {
+const Form = ({ submit, change, recipe }) => {
+
   return (
     <div className='form'>
-      <form onSubmit={{ submit }}>
+      <form onSubmit={submit} onChange={change} recipe={recipe} method="post" >
         <h4>Add new recipe</h4>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />
@@ -15,7 +16,7 @@ const Form = (click, submit) => {
         <Country />
         <label htmlFor="description">Description</label>
         <textarea name="description" id="description" maxLength={1000} />
-        <label for="image">Image</label>
+        <label htmlFor="image">Image</label>
         <input type="url" id="image" name="image" alt="imagename" />
         <div className='ingredient_holder'>
           <p>Ingredients</p>
@@ -33,7 +34,7 @@ const Form = (click, submit) => {
         </div>
         <label htmlFor='instruction'>Instructions</label>
         <textarea name="instruction" id="instruction" maxLength={1000} />
-        <button type="submit" id="post" onClick={{ click }}>Post recipe</button>
+        <button type="submit" id="post" value="submit" name="submit">Post recipe</button>
 
       </form>
 

@@ -21,6 +21,17 @@
       "ingredient": " butter, water, lentis, garlic, ginger, species",
       "instruction": "use pressure cooker and cook in medium heat",
       "id": 2
+    },
+    {
+      "name": "",
+      "author": "",
+      "country": "",
+      "description": "",
+      "image": "",
+      "quantity": null,
+      "ingredient": [],
+      "instruction": "",
+      "id": 3
     }
   ]
 }

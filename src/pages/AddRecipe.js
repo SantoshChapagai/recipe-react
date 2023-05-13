@@ -1,44 +1,38 @@
-import axios from 'axios';
+import Axios from 'axios';
 import React, { useState } from 'react';
 import Form from '../Components/Form'
 
 const AddRecipe = () => {
 
-  const [details, setDetails] = useState({
+  const [recipe, setRecipe] = useState({
     name: '',
     author: '',
     country: '',
     description: '',
     image: '',
     quantity: null,
-    ingredient: '',
+    ingredient: [],
     instruction: ''
   });
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    axios.post(" http://localhost:4000/recipes", details)
+    Axios.post("http://localhost:4000/recipes", recipe)
       .then(res => {
         console.log(res.data);
       })
       .catch(error => {
         console.log(error);
       });
-    setDetails({
-      name: '',
-      author: '',
-      country: '',
-      description: '',
-      image: '',
-      quantity: null,
-      ingredient: '',
-      instruction: ''
-    });
+    // setRecipe({ recipe });
+  }
+  const changeHandler = (e) => {
+    setRecipe({ ...recipe, [e.target.name]: e.target.value });
   }
 
   return (
     <div>
-      <Form click={submitHandler} />
+      <Form submit={submitHandler} change={changeHandler} recipe={recipe} />
     </div>
   );
 };
