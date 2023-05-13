@@ -25,6 +25,13 @@ const SingleRecipe = () => {
     <div>
       <h2>Hello</h2>
       <img src={data.image} alt={data.name} />
+      <h2>{data.name}</h2>
+      <h3>{data.author}</h3>
+      <h3>{data.country}</h3>
+      <p>{data.description}</p>
+      <p>{data.quantity} : <span>{data.ingredient}</span></p>
+      <p>{data.instruction}</p>
+
       <button onClick={() => navigate(-1)}>Go back </button>
     </div>
   );

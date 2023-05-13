@@ -31,9 +31,9 @@ const Recipes = () => {
       <div className='search'>
         <input onChange={searchInputHandler} />
       </div>
-      {searchFilter.map((recipe) => (
-        <Card key={recipe.id}
-          recipe={recipe}
+      {searchFilter.map((data) => (
+        <Card key={data.id}
+          recipe={data}
         />
       ))}
 
