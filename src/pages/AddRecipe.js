@@ -24,7 +24,19 @@ const AddRecipe = () => {
       .catch(error => {
         console.log(error);
       });
-    // setRecipe({ recipe });
+    setRecipe({
+      recipe
+      // name: '',
+      // author: '',
+      // country: '',
+      // description: '',
+      // image: '',
+      // quantity: null,
+      // ingredient: [],
+      // instruction: ''
+    });
+    e.target.reset();
+
   }
   const changeHandler = (e) => {
     setRecipe({ ...recipe, [e.target.name]: e.target.value });
