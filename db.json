@@ -32,6 +32,17 @@
       "ingredient": [],
       "instruction": "",
       "id": 3
+    },
+    {
+      "name": "whatever",
+      "author": "who",
+      "country": "",
+      "description": "",
+      "image": "",
+      "quantity": null,
+      "ingredient": [],
+      "instruction": "",
+      "id": 4
     }
   ]
 }
