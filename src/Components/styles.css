@@ -95,3 +95,30 @@ form p {
   background-color: green;
   color: white;
 }
+
+/* single recipe styles */
+
+.back_button button {
+  background-color: black;
+  color: white;
+  height: 2rem;
+  width: 5rem;
+  margin: 2rem auto;
+}
+
+.single_recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: blanchedalmond;
+  padding: 2rem;
+  margin: 0 5rem;
+  height: fit-content;
+}
+
+.single_recipe h2,
+.single_recipe h3,
+.single_recipe p {
+  margin: 0.5rem 0;
+}

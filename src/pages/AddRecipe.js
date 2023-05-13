@@ -17,14 +17,23 @@ const AddRecipe = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    axios.post(' http://localhost:4000/posts', details)
+    axios.post(" http://localhost:4000/recipes", details)
       .then(res => {
         console.log(res.data);
-        setDetails({});
       })
       .catch(error => {
         console.log(error);
       });
+    setDetails({
+      name: '',
+      author: '',
+      country: '',
+      description: '',
+      image: '',
+      quantity: null,
+      ingredient: '',
+      instruction: ''
+    });
   }
 
   return (

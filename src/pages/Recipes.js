@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from '../UI/Card'
 
+
 const Recipes = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
