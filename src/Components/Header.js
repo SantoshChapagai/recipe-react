@@ -14,7 +14,6 @@ const Header = () => {
             <li><NavLink to='addrecipe'>Add a recipe</NavLink></li>
           </ul>
         </nav>
-
       </div>
     </header>
   );

@@ -6,7 +6,11 @@
 }
 
 .container {
-  padding: 5rem;
+  padding: 3rem;
+}
+
+.home a {
+  text-decoration: none;
 }
 
 .home h1,
@@ -23,7 +27,7 @@
   color: pink
 }
 
-a {
+.card a {
   text-decoration: none;
   color: pink;
 }
@@ -49,4 +53,16 @@ h2 {
 
 .card p {
   margin: 1rem 0;
+}
+
+/* styling for recipes */
+.search {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.all_card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }

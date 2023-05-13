@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from '../UI/Card'
+import Card from '../UI/Card';
+import './css/styles.css';
 
 
 const Recipes = () => {
@@ -32,12 +33,13 @@ const Recipes = () => {
       <div className='search'>
         <input onChange={searchInputHandler} />
       </div>
-      {searchFilter.map((data) => (
-        <Card key={data.id}
-          recipe={data}
-        />
-      ))}
-
+      <div className='all_card'>
+        {searchFilter.map((data) => (
+          <Card key={data.id}
+            recipe={data}
+          />
+        ))}
+      </div>
     </div>
   );
 };
