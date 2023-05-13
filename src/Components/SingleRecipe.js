@@ -4,6 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios';
 import './styles.css';
 
+
 const SingleRecipe = () => {
   const params = useParams();
   const navigate = useNavigate();
@@ -33,7 +34,9 @@ const SingleRecipe = () => {
         <h3>{data.author}</h3>
         <h3>{data.country}</h3>
         <p>{data.description}</p>
-        <p>{data.quantity} : <span>{data.ingredient}</span></p>
+        {data?.ingredients?.map((item, index) => (
+          <p key={index}>{item.quantity} {item.ingredint}</p>
+        ))};
         <p>{data.instruction}</p>
       </div>
     </div>

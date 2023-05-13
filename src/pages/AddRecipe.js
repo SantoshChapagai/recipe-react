@@ -26,14 +26,6 @@ const AddRecipe = () => {
       });
     setRecipe({
       recipe
-      // name: '',
-      // author: '',
-      // country: '',
-      // description: '',
-      // image: '',
-      // quantity: null,
-      // ingredient: [],
-      // instruction: ''
     });
     e.target.reset();
 
