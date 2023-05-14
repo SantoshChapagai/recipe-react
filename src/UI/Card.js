@@ -11,7 +11,6 @@ const Card = ({ recipe }) => {
       <h3>{recipe.name}</h3>
       <div className='more'>
         <Link to={`/recipes/${recipe.id}`}>See more</Link>
-
       </div>
     </div >
   );

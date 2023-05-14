@@ -6,7 +6,7 @@ const More = () => {
 
   const addIngredient = (e) => {
     e.preventDefault();
-    setIngredients(ingredients.concat({ quantity: '', ingredient: '' }));
+    setIngredients(([...ingredients, { quantity: '', ingredient: '' }]));
   };
 
   const handleIngredientChange = (e, index) => {
@@ -18,7 +18,7 @@ const More = () => {
 
   return (
     <div>
-      <form>
+      <form name="ingredients">
         {ingredients.map((ingredient, index) => (
           <div key={index} className='ingredients'>
             <div className='quantity'>

@@ -21,7 +21,7 @@ const Form = ({ submit, change, recipe }) => {
         <input type="url" id="image" name="image" alt="imagename" required />
         <div className='ingredient_holder'>
           <p>Ingredients</p>
-          <More ingredients={recipe.ingredient} quantity={recipe.quantity} />
+          <More ingredients={recipe.ingredients} />
           {/* <div className='ingredients'>
             <div className='quantity'>
               <label htmlFor='quantity'>Quantity</label>

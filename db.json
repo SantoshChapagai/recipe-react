@@ -32,67 +32,66 @@
       "id": 2
     },
     {
-      "name": "chicken",
-      "author": "hdd",
-      "country": "Namibia",
-      "description": "dnjds",
-      "image": "https://media.istockphoto.com/id/1446478805/fi/valokuva/kokki-viimeistelee-lautasen-valmistusta.jpg?s=612x612&w=0&k=20&c=aAd5dbsbLZuYx36rKQb1LIoh7bJZl21TgreBUgAqyO0=",
+      "name": "sdd",
+      "author": "edfef",
+      "country": "American Samoa",
+      "description": "wdwe",
+      "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "ingredient": "ded",
+      "instruction": "ewewe",
       "quantity": "2",
-      "ingredient": "edh",
-      "instruction": "something",
       "id": 3
     },
     {
-      "name": "323",
-      "author": "dwd",
-      "country": "",
-      "description": "dwdwed",
-      "image": "https://media.istockphoto.com/id/1445690629/fi/valokuva/kokki-valmistaa-kullattua-lahnaruokaa-ylellisess%C3%A4-ravintolassa.jpg?s=612x612&w=0&k=20&c=f1D6TKrdrUwbwB4lDdVKWxKimZ93MyiG3Xm8hAPlpr4=",
-      "quantity": "1",
-      "ingredients": [],
-      "instruction": "dwd",
-      "ingredient": [],
+      "name": "wsd",
+      "author": "dwdwqd",
+      "country": "Andorra",
+      "description": "dwqdwqd",
+      "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "ingredients": [
+        {
+          "qunatity": "",
+          "ingredient": ""
+        }
+      ],
+      "instruction": "dwqwd",
+      "quantity": "ewe",
+      "ingredient": "wewe",
       "id": 4
     },
     {
-      "name": "dsd",
-      "author": "dsdsdwqdwe",
-      "country": "",
-      "description": "dewdfwefdwe",
-      "image": "https://media.istockphoto.com/id/1445690629/fi/valokuva/kokki-valmistaa-kullattua-lahnaruokaa-ylellisess%C3%A4-ravintolassa.jpg?s=612x612&w=0&k=20&c=f1D6TKrdrUwbwB4lDdVKWxKimZ93MyiG3Xm8hAPlpr4=",
-      "quantity": "3",
-      "ingredients": [],
-      "instruction": "dwdw",
-      "ingredient": [],
+      "name": "wd",
+      "author": "dqwd",
+      "country": "Australia",
+      "description": "dqwdqwd",
+      "image": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+      "ingredients": [
+        {
+          "qunatity": "",
+          "ingredient": ""
+        }
+      ],
+      "instruction": "qewe",
+      "quantity": "223",
+      "ingredient": "sd",
       "id": 5
     },
     {
-      "name": "asa",
-      "author": "asaS",
-      "country": "",
-      "description": "SAs",
-      "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "ingredient": "dw",
-      "instruction": "dwqdqw",
-      "quantity": "1",
+      "name": "sds",
+      "author": "wdw",
+      "country": "Bangladesh",
+      "description": "wdwqd",
+      "image": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+      "ingredients": [
+        {
+          "quantity": "",
+          "ingredient": ""
+        }
+      ],
+      "instruction": "ewewe",
+      "quantity": "2",
+      "ingredient": "defd",
       "id": 6
-    },
-    {
-      "recipe": {
-        "name": "asa",
-        "author": "asaS",
-        "country": "",
-        "description": "SAs",
-        "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "ingredient": "dw",
-        "instruction": "dwqdqw",
-        "quantity": "1"
-      },
-      "name": "dwdwq",
-      "author": "wqewq",
-      "description": "qwewqe",
-      "instruction": "dwqedqw",
-      "id": 7
     }
   ]
 }
