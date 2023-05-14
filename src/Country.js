@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Country = () => {
+const Country = ({ ...rest }) => {
   return (
-    <select id="country" name="country">
+    <select id="country" name="country" {...rest}>
       <option value="Afghanistan">Afghanistan</option>
       <option value="Åland Islands">Åland Islands</option>
       <option value="Albania">Albania</option>

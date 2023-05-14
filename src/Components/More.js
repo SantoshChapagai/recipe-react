@@ -6,7 +6,7 @@ const More = () => {
 
   const addIngredient = (e) => {
     e.preventDefault();
-    setIngredients([...ingredients, { quantity: '', ingredient: '' }]);
+    setIngredients(ingredients.concat({ quantity: '', ingredient: '' }));
   };
 
   const handleIngredientChange = (e, index) => {
