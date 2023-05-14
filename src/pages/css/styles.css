@@ -1,8 +1,22 @@
 .home {
-  background-color: black;
   color: white;
   height: 20rem;
-  margin: 0 15px;
+  margin: 0 4rem;
+}
+
+#background_video {
+  height: 20rem;
+  width: 90%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 20rem;
+  margin: 0 3rem;
+  z-index: -1;
+
 }
 
 .container {

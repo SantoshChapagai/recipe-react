@@ -10,7 +10,6 @@ const AddRecipe = () => {
     country: '',
     description: '',
     image: '',
-    quantity: null,
     ingredient: [],
     instruction: ''
   });

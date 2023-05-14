@@ -7,6 +7,14 @@ const Home = () => {
   return (
     <div>
       <div className='home'>
+        <video autoPlay loop muted play-inline id="background_video">
+          <source src="https://player.vimeo.com/external/365129177.sd.mp4?s=14d315c4858f8cf7778befff7069056e0b4de516&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+        </video>
+        {/* <div>
+          <video autoPlay loop muted play-inline id="background_video">
+            <source src="../video/smoke.mp4" type="video/mp4" />
+          </video>
+        </div> */}
         <div className='container'>
           <h1>TasteIT</h1>
           <p>TasteIT is a recipe app which allows to add and browse recipes</p>
