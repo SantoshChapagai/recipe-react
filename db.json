@@ -21,77 +21,38 @@
       "id": 1
     },
     {
-      "name": "sewai",
-      "author": "Sabin",
+      "name": "",
+      "author": "",
       "country": "",
-      "description": "make it",
-      "image": "https://media.istockphoto.com/id/1446478805/fi/valokuva/kokki-viimeistelee-lautasen-valmistusta.jpg?s=612x612&w=0&k=20&c=aAd5dbsbLZuYx36rKQb1LIoh7bJZl21TgreBUgAqyO0=",
-      "quantity": "200g",
-      "ingredient": "milk",
-      "instruction": "cook and eat",
-      "id": 2
-    },
-    {
-      "name": "sdd",
-      "author": "edfef",
-      "country": "American Samoa",
-      "description": "wdwe",
-      "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "ingredient": "ded",
-      "instruction": "ewewe",
-      "quantity": "2",
-      "id": 3
-    },
-    {
-      "name": "wsd",
-      "author": "dwdwqd",
-      "country": "Andorra",
-      "description": "dwqdwqd",
-      "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "ingredients": [
-        {
-          "qunatity": "",
-          "ingredient": ""
-        }
-      ],
-      "instruction": "dwqwd",
-      "quantity": "ewe",
-      "ingredient": "wewe",
-      "id": 4
-    },
-    {
-      "name": "wd",
-      "author": "dqwd",
-      "country": "Australia",
-      "description": "dqwdqwd",
-      "image": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
-      "ingredients": [
-        {
-          "qunatity": "",
-          "ingredient": ""
-        }
-      ],
-      "instruction": "qewe",
-      "quantity": "223",
-      "ingredient": "sd",
-      "id": 5
-    },
-    {
-      "name": "sds",
-      "author": "wdw",
-      "country": "Bangladesh",
-      "description": "wdwqd",
-      "image": "https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_1280.jpg",
+      "description": "",
+      "image": "",
       "ingredients": [
         {
           "quantity": "",
           "ingredient": ""
         }
       ],
-      "instruction": "ewewe",
-      "quantity": "2",
-      "ingredient": "defd",
-      "id": 6
+      "instruction": "",
+      "quantity": "3",
+      "ingredient": "rgrg",
+      "id": 2
+    },
+    {
+      "name": "",
+      "author": "",
+      "country": "",
+      "description": "",
+      "image": "",
+      "ingredients": [
+        {
+          "quantity": "",
+          "ingredient": ""
+        }
+      ],
+      "instruction": "",
+      "quantity": "4",
+      "ingredient": "sdd",
+      "id": 3
     }
   ]
 }

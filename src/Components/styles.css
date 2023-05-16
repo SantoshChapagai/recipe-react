@@ -24,9 +24,9 @@ li {
   margin: 0 1rem;
 }
 
-li a {
+header a {
   text-decoration: none;
-  color: pink;
+  color: white;
 }
 
 /* styling for form */
