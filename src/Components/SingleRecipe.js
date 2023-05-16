@@ -34,10 +34,16 @@ const SingleRecipe = () => {
         <h3>{data.author}</h3>
         <h3>{data.country}</h3>
         <p>{data.description}</p>
-        {data?.ingredients?.map((item, index) => (
-          <p key={index}>{item.quantity} {item.ingredint}</p>
-        ))};
-        <p>{data.instruction}</p>
+        <div className='singleIngredientContainer'>
+          <div className="single_ingredient">
+            {data?.ingredients?.map((item, index) => (
+              <p key={index}>{item.quantity} : {item.ingredient}</p>
+            ))}
+          </div>
+          <div className='single_instruction'>
+            <p>{data.instruction}</p>
+          </div>
+        </div>
       </div>
     </div>
   );

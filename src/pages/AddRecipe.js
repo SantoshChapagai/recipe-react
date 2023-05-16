@@ -1,9 +1,9 @@
 import Axios from 'axios';
 import React, { useState } from 'react';
-import Form from '../Components/Form'
+import Form from '../Components/Form';
+
 
 const AddRecipe = () => {
-
   const [recipe, setRecipe] = useState({
     name: '',
     author: '',
@@ -29,6 +29,8 @@ const AddRecipe = () => {
     e.target.reset();
 
   }
+
+
   const changeHandler = (e) => {
     setRecipe({ ...recipe, [e.target.name]: e.target.value });
   }

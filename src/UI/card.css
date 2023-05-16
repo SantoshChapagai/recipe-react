@@ -1,6 +1,6 @@
 .card_container {
-  height: 15rem;
-  width: 15rem;
+  height: 20rem;
+  width: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,8 +16,8 @@
 }
 
 img {
-  width: 15rem;
-  height: 10rem;
+  width: 20rem;
+  height: 15rem;
   border-radius: 10px;
 }
 

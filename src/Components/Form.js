@@ -1,6 +1,6 @@
 import React from 'react';
 import Country from "../Country"
-import More from "./More"
+// import More from "./More"
 
 
 const Form = ({ submit, change, recipe }) => {
@@ -21,8 +21,8 @@ const Form = ({ submit, change, recipe }) => {
         <input type="url" id="image" name="image" alt="imagename" />
         <div className='ingredient_holder'>
           <p>Ingredients</p>
-          <More ingredients={recipe.ingredients} />
-          {/* <div className='ingredients'>
+          {/* <More ingredients={recipe.ingredients} /> */}
+          <div className='ingredients'>
             <div className='quantity'>
               <label htmlFor='quantity'>Quantity</label>
               <input type="text" id="quantity" name="quantity" />
@@ -32,7 +32,7 @@ const Form = ({ submit, change, recipe }) => {
               <input type="text" id="ingredient" name="ingredient" />
             </div>
           </div>
-          <button type="submit" id="add">Add more</button> */}
+          <button type="submit" id="add">Add more</button>
         </div>
         <label htmlFor='instruction'>Instructions</label>
         <textarea name="instruction" id="instruction" maxLength={1000} />

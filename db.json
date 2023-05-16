@@ -1,20 +1,27 @@
 {
   "recipes": [
     {
-      "name": "tea",
+      "name": "Tea",
       "author": "Santosh",
       "country": "Nepal",
-      "description": "tea with species and milk",
+      "description": "Tea with species and milk",
       "image": "https://cdn.pixabay.com/photo/2015/09/09/18/17/cup-932303_1280.jpg",
-      "quantity": 1,
       "ingredients": [
         {
           "quantity": "1 cup",
-          "ingredint": "milk"
+          "ingredient": "milk"
         },
         {
           "quantity": "2 cup",
-          "ingredint": "Water"
+          "ingredient": "Water"
+        },
+        {
+          "quantity": "2 spoon",
+          "ingredient": "Sugar"
+        },
+        {
+          "quantity": "2 spoon",
+          "ingredient": "tea"
         }
       ],
       "instruction": "boil and drink",
@@ -33,9 +40,28 @@
         }
       ],
       "instruction": "",
-      "quantity": "3",
-      "ingredient": "rgrg",
+      "quantity": "2",
+      "ingredient": "sff",
       "id": 2
+    },
+    {
+      "recipe": {
+        "name": "",
+        "author": "",
+        "country": "",
+        "description": "",
+        "image": "",
+        "ingredients": [
+          {
+            "quantity": "",
+            "ingredient": ""
+          }
+        ],
+        "instruction": "",
+        "quantity": "2",
+        "ingredient": "sff"
+      },
+      "id": 3
     },
     {
       "name": "",
@@ -50,9 +76,41 @@
         }
       ],
       "instruction": "",
-      "quantity": "4",
-      "ingredient": "sdd",
-      "id": 3
+      "id": 4
+    },
+    {
+      "recipe": {
+        "name": "",
+        "author": "",
+        "country": "",
+        "description": "",
+        "image": "",
+        "ingredients": [
+          {
+            "quantity": "",
+            "ingredient": ""
+          }
+        ],
+        "instruction": ""
+      },
+      "id": 5
+    },
+    {
+      "name": "",
+      "author": "",
+      "country": "Angola",
+      "description": "",
+      "image": "",
+      "ingredients": [
+        {
+          "quantity": "",
+          "ingredient": ""
+        }
+      ],
+      "instruction": "",
+      "quantity": "1",
+      "ingredient": "er",
+      "id": 6
     }
   ]
 }
