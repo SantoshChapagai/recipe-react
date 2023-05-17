@@ -1,9 +1,20 @@
-import React from 'react';
-import Country from "../Country"
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 // import More from "./More"
 
 
 const Form = ({ submit, change, recipe }) => {
+  const [data, setData] = useState()
+  const [isLoading, setIsLoading] = useState(false)
+  useEffect(() => {
+    setIsLoading(true);
+    axios.get('https://restcountries.com/v3.1/all/')
+      .then(res => { setData(res.data.map(data => data.name.common)) })
+    setIsLoading(false);
+  }, [])
+  if (isLoading) {
+    <p>Loading...</p>
+  }
 
   return (
     <div className='form'>
@@ -14,7 +25,9 @@ const Form = ({ submit, change, recipe }) => {
         <label htmlFor="author">Author</label>
         <input type="text" id="author" name="author" />
         <label htmlFor="country">recipe is from</label>
-        <Country />
+        <select name='country'>
+          {data && data.map((country, index) => <option key={index}>{country}</option>)}
+        </select>
         <label htmlFor="description">Description</label>
         <textarea name="description" id="description" maxLength={1000} />
         <label htmlFor="image">Image</label>
@@ -22,7 +35,7 @@ const Form = ({ submit, change, recipe }) => {
         <div className='ingredient_holder'>
           <p>Ingredients</p>
           {/* <More ingredients={recipe.ingredients} /> */}
-          <div className='ingredients'>
+          <div className='ingredients' name="ingredients">
             <div className='quantity'>
               <label htmlFor='quantity'>Quantity</label>
               <input type="text" id="quantity" name="quantity" />

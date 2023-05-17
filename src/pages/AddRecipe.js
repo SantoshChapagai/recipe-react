@@ -31,13 +31,23 @@ const AddRecipe = () => {
   }
 
 
-  const changeHandler = (e) => {
-    setRecipe({ ...recipe, [e.target.name]: e.target.value });
-  }
+  const changeHandler = (e, index) => {
+    const { name, value } = e.target;
+    const ingredients = [...recipe.ingredients];
+    ingredients[index][name] = value;
+    setRecipe({ ...recipe, ingredients });
+  };
+  const handleAddIngredient = () => {
+    setRecipe({
+      ...recipe,
+      ingredients: [...recipe.ingredients, { quantity: '', ingredient: '' }]
+    });
+  };
+
 
   return (
     <div>
-      <Form submit={submitHandler} change={changeHandler} recipe={recipe} />
+      <Form submit={submitHandler} change={changeHandler} handleAddIngredient={handleAddIngredient} recipe={recipe} />
     </div>
   );
 };
