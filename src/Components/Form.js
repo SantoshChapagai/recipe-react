@@ -26,6 +26,7 @@ const Form = ({ submit, change, recipe }) => {
         <input type="text" id="author" name="author" />
         <label htmlFor="country">recipe is from</label>
         <select name='country'>
+          <option>select</option>
           {data && data.map((country, index) => <option key={index}>{country}</option>)}
         </select>
         <label htmlFor="description">Description</label>
