@@ -8,6 +8,7 @@
   background-color: burlywood;
   margin: 1rem;
   border-radius: 10px;
+  position: relative;
 }
 
 .card_container h3 {
@@ -23,4 +24,12 @@ img {
 
 .more {
   margin: 0.5rem 0 1rem 0;
+}
+
+.flag img {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 // import More from "./More"
 
 
-const Form = ({ submit, change, recipe }) => {
+const Form = ({ submit, change, handleChange }) => {
   const [data, setData] = useState()
   const [isLoading, setIsLoading] = useState(false)
   useEffect(() => {
@@ -13,12 +13,12 @@ const Form = ({ submit, change, recipe }) => {
     setIsLoading(false);
   }, [])
   if (isLoading) {
-    <p>Loading...</p>
+    return <p>Loading...</p>
   }
 
   return (
     <div className='form'>
-      <form onSubmit={submit} onChange={change} recipe={recipe} method="post" >
+      <form onSubmit={submit} onChange={change} method="post" >
         <h4>Add new recipe</h4>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />
@@ -36,14 +36,14 @@ const Form = ({ submit, change, recipe }) => {
         <div className='ingredient_holder'>
           <p>Ingredients</p>
           {/* <More ingredients={recipe.ingredients} /> */}
-          <div className='ingredients' name="ingredients">
+          <div className='ingredients'>
             <div className='quantity'>
               <label htmlFor='quantity'>Quantity</label>
-              <input type="text" id="quantity" name="quantity" />
+              <input type="text" id="quantity" name="quantity" onChange={handleChange} />
             </div>
             <div className='ingredient'>
               <label htmlFor="ingredient">Ingredient</label>
-              <input type="text" id="ingredient" name="ingredient" />
+              <input type="text" id="ingredient" name="ingredient" onChange={handleChange} />
             </div>
           </div>
           <button type="submit" id="add">Add more</button>

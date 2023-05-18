@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios';
+import Flags from './Flags';
 import './styles.css';
 
 
@@ -29,7 +30,12 @@ const SingleRecipe = () => {
         <button onClick={() => navigate(-1)}>Go back </button>
       </div>
       <div className='single_recipe'>
-        <img src={data.image} alt={data.name} />
+        <div className='image'>
+          <div className='flag'>
+            <Flags recipe={data} />
+          </div>
+          <img src={data.image} alt={data.name} />
+        </div>
         <h2>{data.name}</h2>
         <h3>{data.author}</h3>
         <h3>{data.country}</h3>

@@ -130,3 +130,13 @@ form p {
 .single_recipe p {
   margin: 0.5rem 0;
 }
+
+.image {
+  position: relative;
+}
+
+.flag {
+  position: absolute;
+  right: 0;
+  top: 0;
+}

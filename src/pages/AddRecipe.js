@@ -10,9 +10,14 @@ const AddRecipe = () => {
     country: '',
     description: '',
     image: '',
-    ingredients: [{ quantity: '', ingredient: '' }],
+    ingredients: [],
     instruction: ''
   });
+
+  const [Ingredients, setIngredients] = useState({
+    quantity: '',
+    ingredient: ''
+  })
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -30,24 +35,21 @@ const AddRecipe = () => {
 
   }
 
-
-  const changeHandler = (e, index) => {
-    const { name, value } = e.target;
-    const ingredients = [...recipe.ingredients];
-    ingredients[index][name] = value;
-    setRecipe({ ...recipe, ingredients });
+  const changeHandler = (e) => {
+    // const { name, value } = e.target;
+    setRecipe({ ...recipe, [e.target.name]: e.target.value })
   };
-  const handleAddIngredient = () => {
-    setRecipe({
-      ...recipe,
-      ingredients: [...recipe.ingredients, { quantity: '', ingredient: '' }]
-    });
-  };
+  // const handleAddIngredient = () => {
+  //   setRecipe({
+  //     ingredients: [...recipe.ingredients, { quantity: '', ingredient: '' }]
+  //   });
+  // };
 
 
   return (
     <div>
-      <Form submit={submitHandler} change={changeHandler} handleAddIngredient={handleAddIngredient} recipe={recipe} />
+      <Form submit={submitHandler} change={changeHandler} />
+
     </div>
   );
 };

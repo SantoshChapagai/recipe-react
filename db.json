@@ -26,6 +26,16 @@
       ],
       "instruction": "boil and drink",
       "id": 1
+    },
+    {
+      "name": "sewai",
+      "author": "someone",
+      "country": "Austria",
+      "description": "",
+      "image": "",
+      "ingredients": [],
+      "instruction": "",
+      "id": 2
     }
   ]
 }
