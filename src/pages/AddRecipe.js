@@ -10,16 +10,18 @@ const AddRecipe = () => {
     country: '',
     description: '',
     image: '',
-    ingredients: [],
-    instruction: ''
+    ingredients: [
+      {
+        quantity: "",
+        ingredient: ""
+      }
+    ],
+    instruction: '',
+    id: null,
   });
 
-  const [Ingredients, setIngredients] = useState({
-    quantity: '',
-    ingredient: ''
-  })
 
-  const submitHandler = async (e) => {
+  const recipeHandler = async (e) => {
     e.preventDefault();
     Axios.post("http://localhost:4000/recipes", recipe)
       .then(res => {
@@ -36,19 +38,29 @@ const AddRecipe = () => {
   }
 
   const changeHandler = (e) => {
-    // const { name, value } = e.target;
-    setRecipe({ ...recipe, [e.target.name]: e.target.value })
+    const { name, value } = e.target;
+    if (name.includes('quantity') || name.includes('ingredient')) {
+      const [, i] = name.split("-");
+      setRecipe((prevRecipe) => {
+        const updatedIngredients = [...prevRecipe.ingredients];
+        updatedIngredients[i] = {
+          ...updatedIngredients[i],
+          [name.includes('quantity-') ? "quantity" : "ingredient"]: value
+        };
+        return { ...prevRecipe, ingredients: updatedIngredients };
+      })
+    } else {
+      setRecipe({ ...recipe, [e.target.name]: e.target.value });
+      console.log(recipe)
+    }
   };
-  // const handleAddIngredient = () => {
-  //   setRecipe({
-  //     ingredients: [...recipe.ingredients, { quantity: '', ingredient: '' }]
-  //   });
-  // };
+
+
 
 
   return (
     <div>
-      <Form submit={submitHandler} change={changeHandler} />
+      <Form submit={recipeHandler} change={changeHandler} recipe={recipe} />
 
     </div>
   );

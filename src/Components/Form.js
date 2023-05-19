@@ -1,11 +1,13 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-// import More from "./More"
 
 
-const Form = ({ submit, change, handleChange }) => {
-  const [data, setData] = useState()
+
+const Form = ({ submit, change, recipe }) => {
+  const [data, setData] = useState([])
   const [isLoading, setIsLoading] = useState(false)
+  const [ingredients, setIngredients] = useState(1)
+
   useEffect(() => {
     setIsLoading(true);
     axios.get('https://restcountries.com/v3.1/all/')
@@ -18,7 +20,7 @@ const Form = ({ submit, change, handleChange }) => {
 
   return (
     <div className='form'>
-      <form onSubmit={submit} onChange={change} method="post" >
+      <form onSubmit={submit} onChange={change} recipe={recipe} method="post" >
         <h4>Add new recipe</h4>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />
@@ -34,23 +36,26 @@ const Form = ({ submit, change, handleChange }) => {
         <label htmlFor="image">Image</label>
         <input type="url" id="image" name="image" alt="imagename" />
         <div className='ingredient_holder'>
-          <p>Ingredients</p>
-          {/* <More ingredients={recipe.ingredients} /> */}
-          <div className='ingredients'>
-            <div className='quantity'>
-              <label htmlFor='quantity'>Quantity</label>
-              <input type="text" id="quantity" name="quantity" onChange={handleChange} />
+          <label htmlFor="">Ingredients</label>
+          {[...Array(ingredients)].map((_, index) => (
+            <div className='ing' key={index}>
+              <div>
+                <label htmlFor={`quantity-${index}`}>Quantity</label>
+                <input type="text" name={`quantity-${index}`} id={`quantity-${index}`} />
+              </div>
+              <div className='bkt'>
+                <label htmlFor={`ingredient-${index}`}>Ingredient</label>
+                <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required />
+              </div>
             </div>
-            <div className='ingredient'>
-              <label htmlFor="ingredient">Ingredient</label>
-              <input type="text" id="ingredient" name="ingredient" onChange={handleChange} />
-            </div>
-          </div>
-          <button type="submit" id="add">Add more</button>
+          ))}
+
+
+          <button type="submit" id="add" onClick={() => setIngredients(ingredients + 1)}>Add more</button>
         </div>
         <label htmlFor='instruction'>Instructions</label>
         <textarea name="instruction" id="instruction" maxLength={1000} />
-        <button type="submit" id="post" value="submit" name="submit">Post recipe</button>
+        <button type="submit" id="post" value="submit" name="submit" >Post recipe</button>
 
       </form>
 
