@@ -33,7 +33,7 @@ const Form = ({ submit, change, recipe }) => {
           {data && data.map((country, index) => <option key={index}>{country}</option>)}
         </select>
         <label htmlFor="description">Description</label>
-        <textarea name="description" id="description" maxLength={1000} />
+        <textarea name="description" id="description" />
         <label htmlFor="image">Image</label>
         <input type="url" id="image" name="image" alt="imagename" />
         <div className='ingredient_holder'>
@@ -53,7 +53,7 @@ const Form = ({ submit, change, recipe }) => {
           <button type="submit" id="add" onClick={() => setIngredients(ingredients + 1)}>Add more</button>
         </div>
         <label htmlFor='instruction'>Instructions</label>
-        <textarea name="instruction" id="instruction" maxLength={1000} />
+        <textarea name="instruction" id="instruction" />
         <button type="submit" id="post" value="submit" name="submit" >Post recipe</button>
 
       </form>

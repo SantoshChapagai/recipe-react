@@ -5,7 +5,7 @@ import './styles.css'
 const Header = () => {
   return (
     <header>
-      <NavLink to="/"><h3>TasteIt</h3></NavLink>
+      <NavLink to="/"><h3>4ooDy</h3></NavLink>
       <div calss="nav">
         <nav>
           <ul>

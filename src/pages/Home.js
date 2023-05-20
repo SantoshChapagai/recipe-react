@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <div className='home'>
         <video autoPlay loop muted play-inline id="background_video">
-          <source src="https://player.vimeo.com/external/372334127.sd.mp4?s=bd520edd093d7bb82c2a8a8967b16da32682717d&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
+          <source src="https://player.vimeo.com/external/456896527.sd.mp4?s=5f834301c1c496b5e7f8fa8c0772defd2760df7b&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
         </video>
         {/* <div>
           <video autoPlay loop muted play-inline id="background_video">
@@ -17,8 +17,8 @@ const Home = () => {
         </div> */}
         <div className='container'>
           <div className='list_holder'>
-            <h1>TasteIT</h1>
-            <p>TasteIT is a recipe app which allows to add and browse recipes</p>
+            <h1>4ooDy</h1>
+            <p>4ooDy is a recipe app which allows to add and browse recipes</p>
             <NavLink to='/recipes'><button>Browse recipes</button></NavLink>
           </div>
         </div>
