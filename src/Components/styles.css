@@ -72,19 +72,23 @@ button {
   border-radius: 5px;
 }
 
+.buttons {
+  display: flex;
+
+}
+
 form p {
   margin: 0.5rem 0;
 }
 
-.ingredients {
+.ingredients_list {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 1fr 1fr;
-  height: 5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.ingredients input {
+.ingredients_list input {
   width: 7rem;
+  margin-right: 3px;
 }
 
 .ingredient_holder button {
@@ -94,6 +98,7 @@ form p {
   background-color: white;
   border: 1px solid green;
   color: green;
+  margin: 5px 0 0 3px;
 }
 
 #post {
@@ -114,15 +119,7 @@ form p {
   margin: 2rem auto;
 }
 
-/* .single_recipe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  margin: 0 5rem;
-  height: fit-content;
-} */
+
 
 .single_recipe h2,
 .single_recipe h3,

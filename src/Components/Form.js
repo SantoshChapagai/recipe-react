@@ -19,6 +19,7 @@ const Form = ({ submit, change, recipe }) => {
   }
 
 
+
   return (
     <div className='form'>
       <form onSubmit={submit} onChange={change} recipe={recipe} method="post" >
@@ -27,7 +28,7 @@ const Form = ({ submit, change, recipe }) => {
         <input type="text" id="name" name="name" />
         <label htmlFor="author">Author</label>
         <input type="text" id="author" name="author" />
-        <label htmlFor="country">recipe is from</label>
+        <label htmlFor="country">Recipe is from</label>
         <select name='country'>
           <option>select</option>
           {data && data.map((country, index) => <option key={index}>{country}</option>)}
@@ -40,17 +41,22 @@ const Form = ({ submit, change, recipe }) => {
           <label htmlFor="">Ingredients</label>
           {[...Array(ingredients)].map((_, index) => (
             <div className='quantity' key={index}>
-              <div>
-                <label htmlFor={`quantity-${index}`}>Quantity</label>
-                <input type="text" name={`quantity-${index}`} id={`quantity-${index}`} />
-              </div>
-              <div className='ingredient'>
-                <label htmlFor={`ingredient-${index}`}>Ingredient</label>
-                <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required />
+              <div className='ingredients_list'>
+                <div>
+                  <label htmlFor={`quantity-${index}`}>Quantity</label>
+                  <input type="text" name={`quantity-${index}`} id={`quantity-${index}`} />
+                </div>
+                <div className='ingredient'>
+                  <label htmlFor={`ingredient-${index}`}>Ingredient</label>
+                  <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required />
+                </div>
               </div>
             </div>
           ))}
-          <button type="submit" id="add" onClick={() => setIngredients(ingredients + 1)}>Add more</button>
+          <div className='buttons'>
+            <button type="submit" id="add" onClick={() => setIngredients(ingredients + 1)}>Add more</button>
+            {ingredients > 1 && <button type='submit' id="remove" onClick={() => setIngredients(ingredients - 1)}>Remove</button>}
+          </div>
         </div>
         <label htmlFor='instruction'>Instructions</label>
         <textarea name="instruction" id="instruction" />

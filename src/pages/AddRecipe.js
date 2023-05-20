@@ -27,22 +27,23 @@ const AddRecipe = () => {
       .then(res => {
         console.log(res.data);
         alert("Recipe posted successfully");
+        setRecipe(prevRecipe => ({
+          ...prevRecipe,
+          ingredients: [
+            {
+              quantity: "",
+              ingredient: ""
+            }
+          ]
+        }));
+        e.target.reset();
       })
       .catch(error => {
         console.log(error);
       });
-    setRecipe(prevRecipe => ({
-      ...prevRecipe,
-      ingredients: [
-        {
-          quantity: "",
-          ingredient: ""
-        }
-      ]
-    }));
-    e.target.reset();
 
   }
+
 
   const changeHandler = (e) => {
     const { name, value } = e.target;
@@ -58,13 +59,21 @@ const AddRecipe = () => {
       })
     } else {
       setRecipe({ ...recipe, [e.target.name]: e.target.value });
-      console.log(recipe)
+
     }
   };
 
+  const ingredientHandler = (ingredients) => {
+    setRecipe(prevRecipe => ({
+      ...prevRecipe,
+      ingredients: Array.from({ length: ingredients }, (_, index) => prevRecipe.ingredients[index] || { quantity: '', ingredient: '' })
+    }));
+  };
+
+
   return (
     <div>
-      <Form submit={recipeHandler} change={changeHandler} recipe={recipe} />
+      <Form submit={recipeHandler} change={changeHandler} recipe={recipe} ingredientHandler={ingredientHandler} />
 
     </div>
   );
