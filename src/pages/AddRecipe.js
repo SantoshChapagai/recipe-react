@@ -37,6 +37,7 @@ const AddRecipe = () => {
           ]
         }));
         e.target.reset();
+        ingredientsReset();
       })
       .catch(error => {
         console.log(error);
@@ -49,6 +50,7 @@ const AddRecipe = () => {
     const { name, value } = e.target;
     if (name.includes('quantity') || name.includes('ingredient')) {
       const [, i] = name.split("-");
+
       setRecipe((prevRecipe) => {
         const updatedIngredients = [...prevRecipe.ingredients];
         updatedIngredients[i] = {
@@ -56,24 +58,30 @@ const AddRecipe = () => {
           [name.includes('quantity-') ? "quantity" : "ingredient"]: value
         };
         return { ...prevRecipe, ingredients: updatedIngredients };
-      })
+      });
     } else {
-      setRecipe({ ...recipe, [e.target.name]: e.target.value });
-
+      setRecipe((prevRecipe) => ({
+        ...prevRecipe,
+        [name]: value
+      }));
     }
   };
 
-  const ingredientHandler = (ingredients) => {
-    setRecipe(prevRecipe => ({
+  const ingredientsReset = () => {
+    setRecipe((prevRecipe) => ({
       ...prevRecipe,
-      ingredients: Array.from({ length: ingredients }, (_, index) => prevRecipe.ingredients[index] || { quantity: '', ingredient: '' })
+      ingredients: [
+        {
+          quantity: '',
+          ingredient: '',
+        },
+      ],
     }));
   };
 
-
   return (
     <div>
-      <Form submit={recipeHandler} change={changeHandler} recipe={recipe} ingredientHandler={ingredientHandler} />
+      <Form submit={recipeHandler} change={changeHandler} recipe={recipe} ingredientsReset={ingredientsReset} />
 
     </div>
   );

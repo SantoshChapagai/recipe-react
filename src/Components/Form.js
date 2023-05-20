@@ -8,6 +8,8 @@ const Form = ({ submit, change, recipe }) => {
   const [isLoading, setIsLoading] = useState(false)
   const [ingredients, setIngredients] = useState(1)
 
+
+
   useEffect(() => {
     setIsLoading(true);
     axios.get('https://restcountries.com/v3.1/all/')
@@ -17,8 +19,6 @@ const Form = ({ submit, change, recipe }) => {
   if (isLoading) {
     return <p>Loading...</p>
   }
-
-
 
   return (
     <div className='form'>
@@ -55,12 +55,12 @@ const Form = ({ submit, change, recipe }) => {
           ))}
           <div className='buttons'>
             <button type="submit" id="add" onClick={() => setIngredients(ingredients + 1)}>Add more</button>
-            {ingredients > 1 && <button type='submit' id="remove" onClick={() => setIngredients(ingredients - 1)}>Remove</button>}
+            {ingredients > 1 && <button type='button' id="remove" onClick={() => setIngredients(ingredients && ingredients - 1)}>Remove</button>}
           </div>
         </div>
         <label htmlFor='instruction'>Instructions</label>
         <textarea name="instruction" id="instruction" />
-        <button type="submit" id="post" value="submit" name="submit" >Post recipe</button>
+        <button type="submit" id="post" value="submit" name="submit" onClick={() => { ingredients && setIngredients(1) }}>Post recipe</button>
 
       </form>
 

@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <div className='home'>
-        <video autoPlay loop muted play-inline id="background_video">
+        <video autoPlay loop muted playInline id="background_video">
           <source src="https://player.vimeo.com/external/456896527.sd.mp4?s=5f834301c1c496b5e7f8fa8c0772defd2760df7b&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
         </video>
         {/* <div>
