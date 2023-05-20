@@ -18,6 +18,7 @@ const Form = ({ submit, change, recipe }) => {
     return <p>Loading...</p>
   }
 
+
   return (
     <div className='form'>
       <form onSubmit={submit} onChange={change} recipe={recipe} method="post" >
@@ -38,19 +39,17 @@ const Form = ({ submit, change, recipe }) => {
         <div className='ingredient_holder'>
           <label htmlFor="">Ingredients</label>
           {[...Array(ingredients)].map((_, index) => (
-            <div className='ing' key={index}>
+            <div className='quantity' key={index}>
               <div>
                 <label htmlFor={`quantity-${index}`}>Quantity</label>
                 <input type="text" name={`quantity-${index}`} id={`quantity-${index}`} />
               </div>
-              <div className='bkt'>
+              <div className='ingredient'>
                 <label htmlFor={`ingredient-${index}`}>Ingredient</label>
                 <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required />
               </div>
             </div>
           ))}
-
-
           <button type="submit" id="add" onClick={() => setIngredients(ingredients + 1)}>Add more</button>
         </div>
         <label htmlFor='instruction'>Instructions</label>

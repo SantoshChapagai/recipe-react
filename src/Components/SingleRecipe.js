@@ -43,7 +43,8 @@ const SingleRecipe = () => {
             <h3>Author: {data.author}</h3>
             <h3>Country: {data.country}</h3>
             <div className='single_description'>
-              <p>Description: {data.description}</p>
+              <h3>Description</h3>
+              <p> {data.description}</p>
             </div>
           </div>
         </div>

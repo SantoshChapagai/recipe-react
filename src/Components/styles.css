@@ -153,7 +153,16 @@ form p {
   margin: 0 5rem;
 }
 
-.cooking_info h3 {
+.single_description {
+  margin-top: 1rem;
+}
+
+.main_info {
+  margin-left: 10.5rem;
+}
+
+.cooking_info h3,
+.single_description h3 {
   text-align: center;
 }
 
@@ -169,7 +178,8 @@ table {
   margin-left: 5rem;
 }
 
-.single_instruction p {
+.single_instruction p,
+.single_description p {
   width: 40rem;
   border: 1px solid black;
   border-radius: 5px;

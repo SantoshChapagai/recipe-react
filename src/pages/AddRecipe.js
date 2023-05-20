@@ -21,18 +21,25 @@ const AddRecipe = () => {
   });
 
 
-  const recipeHandler = async (e) => {
+  const recipeHandler = (e) => {
     e.preventDefault();
     Axios.post("http://localhost:4000/recipes", recipe)
       .then(res => {
         console.log(res.data);
+        alert("Recipe posted successfully");
       })
       .catch(error => {
         console.log(error);
       });
-    setRecipe({
-      recipe
-    });
+    setRecipe(prevRecipe => ({
+      ...prevRecipe,
+      ingredients: [
+        {
+          quantity: "",
+          ingredient: ""
+        }
+      ]
+    }));
     e.target.reset();
 
   }
@@ -54,9 +61,6 @@ const AddRecipe = () => {
       console.log(recipe)
     }
   };
-
-
-
 
   return (
     <div>
