@@ -30,23 +30,36 @@ const SingleRecipe = () => {
         <button onClick={() => navigate(-1)}>Go back </button>
       </div>
       <div className='single_recipe'>
-        <div className='image'>
-          <div className='flag'>
-            <Flags recipe={data} />
+        <div className='basic_information'>
+          <div className='image'>
+
+            <div className='flag'>
+              <Flags recipe={data} />
+            </div>
+            <img src={data.image} alt={data.name} />
           </div>
-          <img src={data.image} alt={data.name} />
+          <div className='main_info'>
+            <h3>Recipe name: {data.name}</h3>
+            <h3>Author: {data.author}</h3>
+            <h3>Country: {data.country}</h3>
+            <div className='single_description'>
+              <p>Description: {data.description}</p>
+            </div>
+          </div>
         </div>
-        <h2>{data.name}</h2>
-        <h3>{data.author}</h3>
-        <h3>{data.country}</h3>
-        <p>{data.description}</p>
-        <div className='singleIngredientContainer'>
+        <div className='cooking_info'>
           <div className="single_ingredient">
+            <h3>Ingredients</h3>
             {data?.ingredients?.map((item, index) => (
-              <p key={index}>{item.quantity} : {item.ingredient}</p>
+              <table key={item.index}>
+                <td>
+                  <tr>{item.quantity}: {item.ingredient}</tr>
+                </td>
+              </table>
             ))}
           </div>
           <div className='single_instruction'>
+            <h3>Instructions</h3>
             <p>{data.instruction}</p>
           </div>
         </div>

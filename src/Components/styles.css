@@ -114,16 +114,15 @@ form p {
   margin: 2rem auto;
 }
 
-.single_recipe {
+/* .single_recipe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: blanchedalmond;
   padding: 2rem;
   margin: 0 5rem;
   height: fit-content;
-}
+} */
 
 .single_recipe h2,
 .single_recipe h3,
@@ -133,10 +132,46 @@ form p {
 
 .image {
   position: relative;
+  margin-right: 5rem;
 }
 
 .flag {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.basic_information {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 10rem;
+}
+
+.cooking_info {
+  display: flex;
+  flex-direction: row;
+  margin: 0 5rem;
+}
+
+.cooking_info h3 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+  width: 35rem;
+  margin: 0.25rem;
+}
+
+.single_instruction {
+  margin-left: 5rem;
+}
+
+.single_instruction p {
+  width: 40rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
 }
