@@ -49,8 +49,8 @@ const SingleRecipe = () => {
         <div className='cooking_info'>
           <div className="single_ingredient">
             <h3>Ingredients</h3>
-            {data?.ingredients?.map((item, id) => (
-              <div className='table' key={id}>
+            {data?.ingredients?.map((item) => (
+              <div className='table' key={`${item.quantity}-${item.ingredient}`}>
                 <p>{item.quantity}: {item.ingredient}</p>
               </div>
             ))}
