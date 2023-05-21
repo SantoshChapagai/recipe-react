@@ -40,13 +40,17 @@ header a {
   ;
 }
 
+.form h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
 
 input,
 textarea,
 select {
   width: 15rem;
   border-radius: 5px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 input,
@@ -119,6 +123,13 @@ form p {
   margin: 2rem auto;
 }
 
+.single_recipe_container {
+  font-family: 'Roboto', serif;
+}
+
+.single_recipe_container h3 {
+  font-family: 'DM Serif Display', serif;
+}
 
 
 .single_recipe h2,
@@ -130,6 +141,7 @@ form p {
 .image {
   position: relative;
   margin-right: 5rem;
+  box-shadow: 0 0 10px black;
 }
 
 .flag {
@@ -158,6 +170,14 @@ form p {
   margin-left: 14.5rem;
 }
 
+.main_info h5 {
+  margin: 1rem 0;
+}
+
+.main_info span {
+  font-style: italic;
+}
+
 .cooking_info h3,
 .single_description h3 {
   text-align: center;
@@ -181,4 +201,53 @@ table {
   border: 1px solid black;
   border-radius: 5px;
   padding: 0.5rem;
+}
+
+/* for mobile responsiveness */
+
+@media (max-width:576px) {
+  .single_recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .basic_information {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image,
+  .main_info {
+    margin: 0;
+  }
+
+  .single_description p {
+    margin: 1rem 0;
+    width: 15rem;
+  }
+
+  .cooking_info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  table {
+    width: 20rem;
+  }
+
+  .single_instruction {
+    margin: 0;
+  }
+
+  .single_instruction p {
+    width: 20rem;
+  }
 }

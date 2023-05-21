@@ -25,7 +25,7 @@ const SingleRecipe = () => {
   }
 
   return (
-    <div>
+    <div className='single_recipe_container'>
       <div className='back_button'>
         <button onClick={() => navigate(-1)}>Go back </button>
       </div>
@@ -39,9 +39,9 @@ const SingleRecipe = () => {
             <img src={data.image} alt={data.name} />
           </div>
           <div className='main_info'>
-            <h3>Recipe name: {data.name}</h3>
-            <h3>Author: {data.author}</h3>
-            <h3>Country: {data.country}</h3>
+            <h5>Recipe name: <span>{data.name}</span></h5>
+            <h5>Author: <span>{data.author}</span></h5>
+            <h5>Country: <span>{data.country}</span></h5>
             <div className='single_description'>
               <h3>Description</h3>
               <p> {data.description}</p>

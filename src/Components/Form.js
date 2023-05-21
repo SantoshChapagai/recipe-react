@@ -27,7 +27,7 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
   return (
     <div className='form'>
       <form onSubmit={submit} onChange={change} recipe={recipe} method="post" >
-        <h4>Add new recipe</h4>
+        <h3>Add new recipe</h3>
         <label htmlFor="name">Name</label>
         <input type="text" id="name" name="name" />
         <label htmlFor="author">Author</label>

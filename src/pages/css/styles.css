@@ -2,6 +2,7 @@
   color: white;
   height: 25rem;
   margin: 0 2rem;
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 
@@ -35,6 +36,12 @@
   padding: 1.5rem;
 }
 
+.home_container h1,
+.home_container h2,
+.home_container h4 {
+  font-family: 'DM Serif Display', serif;
+}
+
 .container a button {
   height: 3rem;
   width: 8rem;
@@ -60,7 +67,7 @@ h2 {
 
 .card {
   margin: 1rem;
-  width: 18rem;
+  width: 25rem;
   padding: 1rem;
   border: 0.5px solid black;
   border-radius: 5px;
@@ -78,7 +85,50 @@ h2 {
   margin: 2rem 0;
 }
 
+.recipes {
+  font-family: 'Roboto', serif;
+}
+
 .all_card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* for mobile */
+@media (max-width:576px) {
+  .home {
+    margin: 0;
+  }
+
+  .home {
+    margin: 0;
+  }
+
+  .home p {
+    width: 20rem;
+  }
+
+  .home_container h2 {
+    font-size: medium;
+  }
+
+  .home_cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list_holder {
+    margin: 0;
+  }
+
+  .card {
+    width: 20rem;
+  }
+
+  .all_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

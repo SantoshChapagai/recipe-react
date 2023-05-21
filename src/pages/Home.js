@@ -5,16 +5,11 @@ import './css/styles.css'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home_container'>
       <div className='home'>
         <video autoPlay loop muted playInline id="background_video">
           <source src="https://player.vimeo.com/external/456896527.sd.mp4?s=5f834301c1c496b5e7f8fa8c0772defd2760df7b&profile_id=164&oauth2_token_id=57447761" type="video/mp4" />
         </video>
-        {/* <div>
-          <video autoPlay loop muted play-inline id="background_video">
-            <source src="../video/smoke.mp4" type="video/mp4" />
-          </video>
-        </div> */}
         <div className='container'>
           <div className='list_holder'>
             <h1>4ooDy</h1>
@@ -24,7 +19,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h2>Looking for the recipes?</h2>
+        <h2>Awesome recipes around the world</h2>
       </div>
       <div className='home_cards'>
         <div className='card'>

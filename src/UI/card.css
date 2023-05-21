@@ -8,6 +8,7 @@
   background-color: ghostwhite;
   margin: 1rem;
   border-radius: 10px;
+  box-shadow: 0 0 5px black;
   position: relative;
 }
 
@@ -24,6 +25,16 @@ img {
 
 .more {
   margin: 0.5rem 0 1rem 0;
+}
+
+.more a {
+  text-decoration: none;
+  color: darksalmon;
+}
+
+.more a:hover {
+  text-decoration: underline;
+  color: pink;
 }
 
 .flag img {

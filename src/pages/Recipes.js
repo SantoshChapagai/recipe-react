@@ -28,7 +28,7 @@ const Recipes = () => {
     return <p>Loading...</p>
   }
   return (
-    <div>
+    <div className='recipes'>
       <div className='search'>
         <input onChange={searchInputHandler} />
       </div>

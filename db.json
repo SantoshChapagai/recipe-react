@@ -262,6 +262,99 @@
       ],
       "instruction": "Mix honey, yeast and water in small bowl. Let stand 5 to 10 minutes or until mixture starts to lightly foam.\nAdd flour and salt to bowl of KitchenAid® Artisan Mini Stand Mixer. Attach bowl and dough hook to mixer. Turn to Speed 1 and mix about 1 minute. Stop mixer and add yeast mixture. Turn to Speed 4 and knead about 10 minutes or until dough becomes smooth and elastic. Divide into two equal balls.\nPlace each dough ball into separate medium bowls greased with 1 teaspoon olive oil. Cover with plastic wrap and let rise in warm place about 1 to 2 hours or until doubled in size.\nPreheat oven to 550°F. Punch down dough, reshape into a ball, and transfer to clean work surface. Cover each dough ball with damp paper towels and let rest 30 to 60 minutes or until doubled in size.\nStretch each dough ball into 12-inch circle. Transfer to inverted baking sheets. Top each crust with ½ cup tomato sauce, half the cheese and 1 sliced tomato. Bake 10 to 15 minutes or until cheese is melted and crust is nicely browned. Remove from oven and top each pizza with ¼ cup fresh basil before slicing.",
       "id": 9
+    },
+    {
+      "name": "Rice porridge",
+      "author": "Valio",
+      "country": "Finland",
+      "description": "Rice porridge is heavily combined with Christmas time. The excitement of which almond hidden in a porridge on a plate hits is a Christmas memory that many like. However, rice porridge is a great everyday food at other times as well. Served with juice soup or milk, it is also suitable for morning or snack.",
+      "image": "https://media.istockphoto.com/id/1178789300/fi/valokuva/kotitekoinen-terveellinen-aamiainen-kananliha-congee.jpg?s=612x612&w=0&k=20&c=Svjv0Nb3FMCyDy9PxoZUmgkVcwbT5NLoqzXo3aLGxD8=",
+      "ingredients": [
+        {
+          "quantity": "2dl",
+          "ingredient": "water"
+        },
+        {
+          "quantity": "2dl",
+          "ingredient": "porridge rice"
+        },
+        {
+          "ingredient": "milk",
+          "quantity": "1l"
+        },
+        {
+          "quantity": "1/2 tl",
+          "ingredient": "salt"
+        }
+      ],
+      "instruction": "Bring to a boil. Add rice. Bring to a boil until water is absorbed into the rice ( n. 5 min )\nAdd milk. Mix the porridge slowly for 45 minutes, stirring constantly.\nAdd salt, stir.",
+      "id": 10
+    },
+    {
+      "name": "Verivorst (Blood sausage)",
+      "author": "world food",
+      "country": "Estonia",
+      "description": "Verivorst is a traditional Estonian blood and barley sausage favored as a Christmas dish. It is customarily served as a first course with cranberry sauce, red berry jam, mulgikapsad (Estonian sauerkraut), and browned potatoes. ",
+      "image": "https://media.istockphoto.com/id/480085916/fi/valokuva/musta-vanukas-leikatuilla-viipaleilla-leikkuulaudalla.jpg?s=612x612&w=0&k=20&c=vYlHFen9M1aeLalFk8HH-py-gAuEgf_drc7gdHjSEuA=",
+      "ingredients": [
+        {
+          "quantity": "2 3/4 lb (1.25 kg)",
+          "ingredient": "barley groats, washed"
+        },
+        {
+          "quantity": "1 1/2 lb (675 g)",
+          "ingredient": "pork"
+        },
+        {
+          "quantity": "7 oz (200 g) ",
+          "ingredient": "onions, chopped"
+        },
+        {
+          "quantity": "As taste",
+          "ingredient": "salt and pepper"
+        },
+        {
+          "quantity": "As taste",
+          "ingredient": "marjoram, oregano, caraway to taste"
+        },
+        {
+          "quantity": "/2 qt (1/2 l)",
+          "ingredient": "blood"
+        },
+        {
+          "quantity": "About 10 yd (10 m)",
+          "ingredient": " pig intestine, cleaned for use"
+        }
+      ],
+      "instruction": "In hot salted water, boil groats until half-soft.\nCut meat in small pieces and sauté it with sliced onion until browned.\nAdd to the groats and their liquid and boil until the mixture is soft. Remove from heat and cool.\nAdd blood and season as desired.\nFill the intestines, being careful not to overfill, as the stuffing will swell when cooked.\nKnot the sausage ends with soft string.\nPlace sausages in lukewarm water and simmer slowly, about 30 minutes.\nCool the sausages quickly and store in a cold place.\nTo serve, soak sausages in warm water, and then bake or fry until heated through.",
+      "id": 11
+    },
+    {
+      "name": "Ugali",
+      "author": "Michele",
+      "country": "Kenya",
+      "description": "This dish is prepared basically from coarse cornmeal and it is quite similar to polenta. It is a very easy process to prepare ugali for a meal as the process is simple and less time-consuming. The ease of preparation is one factor that highlights the popularity of this dish.",
+      "image": "https://media.istockphoto.com/id/1464175219/fi/valokuva/tilapia-muhennos-ugali-ja-sukuma-wiki-kenialainen-ruoka.jpg?s=612x612&w=0&k=20&c=YyW3aYEKmfDI-MJfTjC-mmpwiMXM5UOaeb9X9lsTHao=",
+      "ingredients": [
+        {
+          "quantity": "3 cups",
+          "ingredient": "water"
+        },
+        {
+          "quantity": "1 1/2 cup",
+          "ingredient": " coarse cornmeal"
+        },
+        {
+          "quantity": "1/2 teaspoon",
+          "ingredient": "salt, optional"
+        },
+        {
+          "quantity": "1 tablespoon",
+          "ingredient": "Vegan Butter, optional"
+        }
+      ],
+      "instruction": "Bring water to boil in a saucepan over medium-high.\nSlowly pour cornmeal while stirring constantly with a whisk until the cornmeal is lump-free and starts to thicken. Then keep stirring with a large wooden spoon vigorously.\nCover the pot, reduce heat and allow the ugali to cook, stirring occasionally while forming into a ball and pressing the ugali on the sides of the pot with the wooden spoon for 7-10 minutes.\nSpoon ugali in a bowl and press down. Invert bowl on a plate and serve ugali with your favorite stew.",
+      "id": 12
     }
   ]
 }
