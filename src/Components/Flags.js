@@ -6,7 +6,7 @@ const Flags = ({ recipe }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    if (recipe && recipe.country) {
+    if (recipe?.country) {
       setIsLoading(true);
       axios
         .get(`https://restcountries.com/v3.1/name/${recipe.country}`)

@@ -35,7 +35,7 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
         <label htmlFor="country">Recipe is from</label>
         <select name='country'>
           <option>select</option>
-          {data && data.map((country) => <option key={country}>{country}</option>)}
+          {data?.map((country) => <option key={country}>{country}</option>)}
         </select>
         <label htmlFor="description">Description</label>
         <textarea name="description" id="description" />
