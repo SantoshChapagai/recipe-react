@@ -159,7 +159,7 @@
         }
       ],
       "instruction": "Heat a heavy pan on the gas (kasaudi is best)\nPut the water in the pan adding a pinch of flour in it and cover it to let it boil.\n\n \n\nLet the water boil properly, if the water is not well boiled dhido may not be well cooked.\n\n \n\nAdd 2 spatula of flour in the water and stir it properly.\n\n \n\nYou have to continuously stir the dhido till it gets cooked.  (otherwise  it  will have balls on dhido)\nLet it cook for about 5 minutes\n",
-      "id": 7
+      "id": 3
     },
     {
       "name": "Lohikeitto",
@@ -210,7 +210,7 @@
         }
       ],
       "instruction": "Remove the skin from the salmon and cut into largish chunks. Remove any small pin bones and discard. Reserve the skin.\nMelt the butter in a soup pot and saute the leeks for 10 minutes, or until nice and soft.\nWhile the leeks are cooking, put 5 cups of water and the reserved fish skin in a saucepan and bring to a boil, turn down the heat and simmer gently for 10 minutes. Note: if you are using fish stock you can skip this step.\nStrain the broth and add to the pan with the leeks, along with the potatoes, carrots, and half of the fresh dill. Cook for another 10 minutes, or until the potatoes are just tender.\nAdd the salmon chunks to the soup along with the cream and allspice, and gently simmer on low heat until cooked through, just a few minutes. Add the remaining dill, and salt and pepper to taste.",
-      "id": 8
+      "id": 4
     },
     {
       "name": "Neapolitan Pizza",
@@ -261,7 +261,7 @@
         }
       ],
       "instruction": "Mix honey, yeast and water in small bowl. Let stand 5 to 10 minutes or until mixture starts to lightly foam.\nAdd flour and salt to bowl of KitchenAid® Artisan Mini Stand Mixer. Attach bowl and dough hook to mixer. Turn to Speed 1 and mix about 1 minute. Stop mixer and add yeast mixture. Turn to Speed 4 and knead about 10 minutes or until dough becomes smooth and elastic. Divide into two equal balls.\nPlace each dough ball into separate medium bowls greased with 1 teaspoon olive oil. Cover with plastic wrap and let rise in warm place about 1 to 2 hours or until doubled in size.\nPreheat oven to 550°F. Punch down dough, reshape into a ball, and transfer to clean work surface. Cover each dough ball with damp paper towels and let rest 30 to 60 minutes or until doubled in size.\nStretch each dough ball into 12-inch circle. Transfer to inverted baking sheets. Top each crust with ½ cup tomato sauce, half the cheese and 1 sliced tomato. Bake 10 to 15 minutes or until cheese is melted and crust is nicely browned. Remove from oven and top each pizza with ¼ cup fresh basil before slicing.",
-      "id": 9
+      "id": 5
     },
     {
       "name": "Rice porridge",
@@ -288,7 +288,7 @@
         }
       ],
       "instruction": "Bring to a boil. Add rice. Bring to a boil until water is absorbed into the rice ( n. 5 min )\nAdd milk. Mix the porridge slowly for 45 minutes, stirring constantly.\nAdd salt, stir.",
-      "id": 10
+      "id": 6
     },
     {
       "name": "Verivorst (Blood sausage)",
@@ -327,7 +327,7 @@
         }
       ],
       "instruction": "In hot salted water, boil groats until half-soft.\nCut meat in small pieces and sauté it with sliced onion until browned.\nAdd to the groats and their liquid and boil until the mixture is soft. Remove from heat and cool.\nAdd blood and season as desired.\nFill the intestines, being careful not to overfill, as the stuffing will swell when cooked.\nKnot the sausage ends with soft string.\nPlace sausages in lukewarm water and simmer slowly, about 30 minutes.\nCool the sausages quickly and store in a cold place.\nTo serve, soak sausages in warm water, and then bake or fry until heated through.",
-      "id": 11
+      "id": 7
     },
     {
       "name": "Ugali",
@@ -354,7 +354,7 @@
         }
       ],
       "instruction": "Bring water to boil in a saucepan over medium-high.\nSlowly pour cornmeal while stirring constantly with a whisk until the cornmeal is lump-free and starts to thicken. Then keep stirring with a large wooden spoon vigorously.\nCover the pot, reduce heat and allow the ugali to cook, stirring occasionally while forming into a ball and pressing the ugali on the sides of the pot with the wooden spoon for 7-10 minutes.\nSpoon ugali in a bowl and press down. Invert bowl on a plate and serve ugali with your favorite stew.",
-      "id": 12
+      "id": 8
     }
   ]
 }

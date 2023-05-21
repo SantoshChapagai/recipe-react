@@ -11,7 +11,6 @@ const SingleRecipe = () => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  console.log(data)
   useEffect(() => {
     setIsLoading(true);
     axios.get(`http://localhost:4000/recipes/${params.singlerecipe}`)

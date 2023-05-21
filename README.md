@@ -14,6 +14,7 @@ npm run server (http://localhost:4000/recipes)
 ### About the application
 - Recipe app that allows to add recipe and browse recipe.
 - Three main pages home, recipes and add recipes.
+- Responsiveness for desktops and mobile phones.
 
 ### Home
 - Navigation of the top that goes to recipes and add recipes.
