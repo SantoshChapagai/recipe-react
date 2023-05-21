@@ -82,6 +82,186 @@
       ],
       "instruction": "To make the dough, combine the flour and 100- 120 ml cold water in a bowl until the mixture comes together. Knead until smooth and soft, then cover with a damp tea towel and allow to rest while you make the filling.\n\nPlace all the filling ingredients in a large bowl and combine well. To check the seasoning, fry off a little bit of the filling in a frying pan, taste and adjust as necessary.\n\nPlace a large steamer on to boil and line the steamer tray with a disc of lightly greased baking paper.\n\nRoll the dough into a log on your work surface, then cut into 20- 22 even pieces. Working with one piece of dough at a time and keeping the rest covered with a tea towel to prevent drying out, shape into a ball, then roll out on a lightly floured surface into a very thin circle about 6 -7 cm in diameter.  Place a generous teaspoon of the filling in the centre and enclose the filling. I take the momo in my right hand and use my thumb and forefinger to enclose the filling by gathering the edges of the dough and pleating as I stick them together. Make sure the filling stays away from the edges. Place directly into the steamer basket, seam-side up. Repeat with the remaining dough and filling. Once they are all done, place the momo in the steamer, cover and steam for 12-14 minutes or until the dough is no longer sticky.\n\nTo make the dipping sauce, heat a chargrill pan over high heat and cook the tomatoes and chillies, turning occasionally until the skin has blackened. When cool enough to handle, peel and chop the tomatoes, then seed and chop the chillies. Heat the oil in a small frying pan over low heat. Add the garlic and cook for 30 seconds or until fragrant and beginning to colour. Add the ginger, sugar, tomato, chilli and vinegar. Season to taste and combine well, then serve warm or at room temperature with the hot momo.\n",
       "id": 1
+    },
+    {
+      "name": "Dal Bhat",
+      "author": "International Cuisine",
+      "country": "Nepal",
+      "description": "Nepali Dal Bhat or Dahl Bhat, is a dish made of lentils and rice. It is considered to be the national dish of Nepal.",
+      "image": "https://media.istockphoto.com/id/1126875823/fi/valokuva/intialaista-ruokaa-bengaliruokaa.jpg?s=612x612&w=0&k=20&c=_4-zmPnAHVpsgyvAl_YJ0dBgEhWE_2Y89AG0ULrbmrM=",
+      "ingredients": [
+        {
+          "quantity": "2tbs",
+          "ingredient": "ghee or oil"
+        },
+        {
+          "quantity": "1 ",
+          "ingredient": "onion(chopped finely)"
+        },
+        {
+          "quantity": "2 cloves",
+          "ingredient": "garlic minced"
+        },
+        {
+          "quantity": "2 tbs",
+          "ingredient": "ginger grated"
+        },
+        {
+          "quantity": "1 teaspoon ",
+          "ingredient": "coriander seeds crushed"
+        },
+        {
+          "quantity": "1/2 teaspoon",
+          "ingredient": "red chili powder"
+        },
+        {
+          "quantity": "1/2 teaspoon",
+          "ingredient": "turmeric"
+        },
+        {
+          "quantity": "1 cup",
+          "ingredient": "red lentils washed"
+        },
+        {
+          "quantity": "3 cups",
+          "ingredient": "water"
+        },
+        {
+          "quantity": "1 teaspoon",
+          "ingredient": "salt"
+        },
+        {
+          "quantity": "2 tablespoons",
+          "ingredient": " chopped cilantro"
+        },
+        {
+          "quantity": "2 cups",
+          "ingredient": "cooked white rice to serve with dal"
+        }
+      ],
+      "instruction": "Heat the ghee or oil in a large frying pan and cook the onions until translucent but not brown.\nTurn the heat to low and add in the garlic, ginger, crushed coriander seeds, red chili powder and turmeric. Stir to combine for about 3 minutes or so.\nAdd in the red lentils and mix well with the onion mixture.\nAdd in the water and bring it to a boil add in the salt and reduce heat to a simmer for about 15 minutes or until the lentils are tender. Stir in the fresh cilantro and remove from heat.\nServe with white boiled or steamed rice",
+      "id": 2
+    },
+    {
+      "name": "Dhido",
+      "author": "Santosh",
+      "country": "Nepal",
+      "description": "Dhido is a traditional food. It is not exactly but a type halva, made by boiling hot water and continuously mixing and stirring flours of maize and other grains like buckwheat. It is still eaten as main meal in various part of Nepal.  The following ingredients are for 2 to 3 people you can add more based on the number of people.",
+      "image": "http://nirlog.com/wp-content/uploads/2010/10/dhedo-niuro.JPG",
+      "ingredients": [
+        {
+          "quantity": "1 liter",
+          "ingredient": "water"
+        },
+        {
+          "quantity": "200gram",
+          "ingredient": "Flour (any type best is corn flour)"
+        }
+      ],
+      "instruction": "Heat a heavy pan on the gas (kasaudi is best)\nPut the water in the pan adding a pinch of flour in it and cover it to let it boil.\n\n \n\nLet the water boil properly, if the water is not well boiled dhido may not be well cooked.\n\n \n\nAdd 2 spatula of flour in the water and stir it properly.\n\n \n\nYou have to continuously stir the dhido till it gets cooked.  (otherwise  it  will have balls on dhido)\nLet it cook for about 5 minutes\n",
+      "id": 7
+    },
+    {
+      "name": "Lohikeitto",
+      "author": "Elina",
+      "country": "Finland",
+      "description": "Finnish Salmon Soup, or Lohikeitto, is a simple Nordic salmon chowder and a comforting 30 minute meal made with a light cream broth, melt-in-your-mouth chunks of salmon, and tons of fresh dill!",
+      "image": "https://media.istockphoto.com/id/1192708300/fi/valokuva/kotitekoista-lohta-ja-purjokermakeittoa.jpg?s=612x612&w=0&k=20&c=WxK_eM3DC1ETOhY8wJc25ucPbAck-B0bUllrC37_OdI=",
+      "ingredients": [
+        {
+          "quantity": "1 lb",
+          "ingredient": "skin-on salmon filet"
+        },
+        {
+          "quantity": "4 Tbsp",
+          "ingredient": "unsaltd butter"
+        },
+        {
+          "quantity": "1 ",
+          "ingredient": "large leek, trimmed, sliced, and well rinsed"
+        },
+        {
+          "quantity": "5 cups",
+          "ingredient": "water (you can also use fish stock)"
+        },
+        {
+          "quantity": "1 lb ",
+          "ingredient": "russet potatoes, peeled and diced"
+        },
+        {
+          "quantity": "1",
+          "ingredient": "large carrot, sliced"
+        },
+        {
+          "quantity": "1 cup",
+          "ingredient": "fresh dill for garnish, finely chopped, divided"
+        },
+        {
+          "quantity": "1 cup",
+          "ingredient": "heavy cream"
+        },
+        {
+          "quantity": "1/4 tsp",
+          "ingredient": "allspice, use more to taste"
+        },
+        {
+          "quantity": "As taste",
+          "ingredient": "salt and pepper"
+        }
+      ],
+      "instruction": "Remove the skin from the salmon and cut into largish chunks. Remove any small pin bones and discard. Reserve the skin.\nMelt the butter in a soup pot and saute the leeks for 10 minutes, or until nice and soft.\nWhile the leeks are cooking, put 5 cups of water and the reserved fish skin in a saucepan and bring to a boil, turn down the heat and simmer gently for 10 minutes. Note: if you are using fish stock you can skip this step.\nStrain the broth and add to the pan with the leeks, along with the potatoes, carrots, and half of the fresh dill. Cook for another 10 minutes, or until the potatoes are just tender.\nAdd the salmon chunks to the soup along with the cream and allspice, and gently simmer on low heat until cooked through, just a few minutes. Add the remaining dill, and salt and pepper to taste.",
+      "id": 8
+    },
+    {
+      "name": "Neapolitan Pizza",
+      "author": "KITCHENAID",
+      "country": "Italy",
+      "description": "Vegetable pizza with cheese and vegetables. Easy to make and great in taste.",
+      "image": "https://cdn.pixabay.com/photo/2014/04/22/02/56/pizza-329523_1280.jpg",
+      "ingredients": [
+        {
+          "quantity": "1 1/2 tsp",
+          "ingredient": "honey"
+        },
+        {
+          "quantity": "1 1/2 tsp",
+          "ingredient": "active dry yeast"
+        },
+        {
+          "quantity": "1 cup",
+          "ingredient": "lukewarm water"
+        },
+        {
+          "quantity": "2 1/2 cups",
+          "ingredient": "bread flour"
+        },
+        {
+          "quantity": " 1 1/2 tsp",
+          "ingredient": " kosher salt"
+        },
+        {
+          "quantity": "2 tsp",
+          "ingredient": "olive oil"
+        },
+        {
+          "quantity": "1 cup",
+          "ingredient": "tomato sauce"
+        },
+        {
+          "quantity": "1 lb",
+          "ingredient": "fresh mozzarella cheese"
+        },
+        {
+          "quantity": " 580 grams",
+          "ingredient": "Roma tomatoes (sliced)"
+        },
+        {
+          "quantity": " 1/2 cup",
+          "ingredient": "loosely packed fresh basil leaves"
+        }
+      ],
+      "instruction": "Mix honey, yeast and water in small bowl. Let stand 5 to 10 minutes or until mixture starts to lightly foam.\nAdd flour and salt to bowl of KitchenAid® Artisan Mini Stand Mixer. Attach bowl and dough hook to mixer. Turn to Speed 1 and mix about 1 minute. Stop mixer and add yeast mixture. Turn to Speed 4 and knead about 10 minutes or until dough becomes smooth and elastic. Divide into two equal balls.\nPlace each dough ball into separate medium bowls greased with 1 teaspoon olive oil. Cover with plastic wrap and let rise in warm place about 1 to 2 hours or until doubled in size.\nPreheat oven to 550°F. Punch down dough, reshape into a ball, and transfer to clean work surface. Cover each dough ball with damp paper towels and let rest 30 to 60 minutes or until doubled in size.\nStretch each dough ball into 12-inch circle. Transfer to inverted baking sheets. Top each crust with ½ cup tomato sauce, half the cheese and 1 sliced tomato. Bake 10 to 15 minutes or until cheese is melted and crust is nicely browned. Remove from oven and top each pizza with ¼ cup fresh basil before slicing.",
+      "id": 9
     }
   ]
 }

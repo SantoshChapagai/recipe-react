@@ -21,7 +21,7 @@ const Recipes = () => {
     setSearchInput(e.target.value)
   }
   const searchFilter = data.filter(recipes => {
-    return recipes.name?.includes(searchInput)
+    return recipes.name?.toLowerCase().includes(searchInput.toLowerCase());
   })
 
   if (isLoading) {
