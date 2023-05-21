@@ -37,13 +37,19 @@ const AddRecipe = () => {
           ]
         }));
         e.target.reset();
-        ingredientsReset();
       })
       .catch(error => {
         console.log(error);
       });
 
   }
+  const removeHandler = () => {
+    setRecipe((prevRecipe) => {
+      const updatedIngredients = [...prevRecipe.ingredients];
+      updatedIngredients.pop();
+      return { ...prevRecipe, ingredients: updatedIngredients };
+    });
+  };
 
 
   const changeHandler = (e) => {
@@ -67,21 +73,21 @@ const AddRecipe = () => {
     }
   };
 
-  const ingredientsReset = () => {
-    setRecipe((prevRecipe) => ({
-      ...prevRecipe,
-      ingredients: [
-        {
-          quantity: '',
-          ingredient: '',
-        },
-      ],
-    }));
-  };
+  // const ingredientsReset = () => {
+  //   setRecipe((prevRecipe) => ({
+  //     ...prevRecipe,
+  //     ingredients: [
+  //       {
+  //         quantity: '',
+  //         ingredient: '',
+  //       },
+  //     ],
+  //   }));
+  // };
 
   return (
     <div>
-      <Form submit={recipeHandler} change={changeHandler} recipe={recipe} ingredientsReset={ingredientsReset} />
+      <Form submit={recipeHandler} change={changeHandler} recipe={recipe} removeHandler={removeHandler} />
 
     </div>
   );

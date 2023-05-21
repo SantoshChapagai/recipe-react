@@ -3,11 +3,10 @@ import React, { useEffect, useState } from 'react';
 
 
 
-const Form = ({ submit, change, recipe }) => {
+const Form = ({ submit, change, recipe, removeHandler }) => {
   const [data, setData] = useState([])
   const [isLoading, setIsLoading] = useState(false)
   const [ingredients, setIngredients] = useState(1)
-
 
 
   useEffect(() => {
@@ -55,7 +54,7 @@ const Form = ({ submit, change, recipe }) => {
           ))}
           <div className='buttons'>
             <button type="submit" id="add" onClick={() => setIngredients(ingredients + 1)}>Add more</button>
-            {ingredients > 1 && <button type='button' id="remove" onClick={() => setIngredients(ingredients && ingredients - 1)}>Remove</button>}
+            {ingredients > 1 && <button type='button' id="remove" onClick={() => { setIngredients(ingredients - 1); removeHandler() }}>Remove</button>}
           </div>
         </div>
         <label htmlFor='instruction'>Instructions</label>
