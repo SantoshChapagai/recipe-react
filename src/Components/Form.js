@@ -35,7 +35,7 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
         <label htmlFor="country">Recipe is from</label>
         <select name='country'>
           <option>select</option>
-          {data && data.map((country, index) => <option key={index}>{country}</option>)}
+          {data && data.map((country) => <option key={country}>{country}</option>)}
         </select>
         <label htmlFor="description">Description</label>
         <textarea name="description" id="description" />
@@ -43,16 +43,16 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
         <input type="url" id="image" name="image" alt="imagename" />
         <div className='ingredient_holder'>
           <label htmlFor="">Ingredients</label>
-          {[...Array(ingredients)].map((_, index) => (
-            <div className='quantity' key={index}>
+          {[...Array(ingredients)].map((_, ingredient) => (
+            <div className='quantity' key={ingredient}>
               <div className='ingredients_list'>
                 <div>
-                  <label htmlFor={`quantity-${index}`}>Quantity</label>
-                  <input type="text" name={`quantity-${index}`} id={`quantity-${index}`} />
+                  <label htmlFor={`quantity-${ingredient}`}>Quantity</label>
+                  <input type="text" name={`quantity-${ingredient}`} id={`quantity-${ingredient}`} />
                 </div>
                 <div className='ingredient'>
-                  <label htmlFor={`ingredient-${index}`}>Ingredient</label>
-                  <input type="text" name={`ingredient-${index}`} id={`ingredient-${index}`} required />
+                  <label htmlFor={`ingredient-${ingredient}`}>Ingredient</label>
+                  <input type="text" name={`ingredient-${ingredient}`} id={`ingredient-${ingredient}`} required />
                 </div>
               </div>
             </div>
