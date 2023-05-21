@@ -49,12 +49,10 @@ const SingleRecipe = () => {
         <div className='cooking_info'>
           <div className="single_ingredient">
             <h3>Ingredients</h3>
-            {data?.ingredients?.map((item, name) => (
-              <table key={item.name}>
-                <td>
-                  <tr>{item.quantity}: {item.ingredient}</tr>
-                </td>
-              </table>
+            {data?.ingredients?.map((item, id) => (
+              <div className='table' key={id}>
+                <p>{item.quantity}: {item.ingredient}</p>
+              </div>
             ))}
           </div>
           <div className='single_instruction'>
