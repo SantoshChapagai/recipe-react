@@ -12,7 +12,12 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
   useEffect(() => {
     setIsLoading(true);
     axios.get('https://restcountries.com/v3.1/all/')
-      .then(res => { setData(res.data.map(data => data.name.common)) })
+      .then(res => {
+        const sortedData = res.data
+          .map(data => data.name.common)
+          .sort((a, z) => a.localeCompare(z));
+        setData(sortedData);
+      })
     setIsLoading(false);
   }, [])
   if (isLoading) {
