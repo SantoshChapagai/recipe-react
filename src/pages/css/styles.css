@@ -24,6 +24,14 @@
 
 .home a {
   text-decoration: none;
+  padding: 1rem;
+  background-color: black;
+  border: 1px solid pink;
+  color: pink
+}
+
+.home p {
+  margin-bottom: 1.5rem;
 }
 
 .list_holder {
@@ -31,8 +39,7 @@
 }
 
 .home h1,
-.home p,
-.home a {
+.home p {
   padding: 1.5rem;
 }
 
@@ -40,14 +47,6 @@
 .home_container h2,
 .home_container h4 {
   font-family: 'DM Serif Display', serif;
-}
-
-.container a button {
-  height: 3rem;
-  width: 8rem;
-  background-color: black;
-  border: 1px solid pink;
-  color: pink
 }
 
 .card a {

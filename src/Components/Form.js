@@ -4,10 +4,9 @@ import React, { useEffect, useState } from 'react';
 
 
 const Form = ({ submit, change, recipe, removeHandler }) => {
-  const [data, setData] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
-  const [ingredients, setIngredients] = useState(1)
-
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [ingredients, setIngredients] = useState(1);
 
   useEffect(() => {
     setIsLoading(true);
@@ -23,24 +22,23 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
   if (isLoading) {
     return <p>Loading...</p>
   }
-
   return (
     <div className='form'>
       <form onSubmit={submit} onChange={change} recipe={recipe} method="post" >
         <h3>Add new recipe</h3>
         <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
         <label htmlFor="author">Author</label>
-        <input type="text" id="author" name="author" />
+        <input type="text" id="author" name="author" required />
         <label htmlFor="country">Recipe is from</label>
-        <select name='country'>
-          <option>select</option>
+        <select name='country' required>
+          <option selected disabled value=" ">select</option>
           {data?.map((country) => <option key={country}>{country}</option>)}
         </select>
         <label htmlFor="description">Description</label>
-        <textarea name="description" id="description" />
+        <textarea name="description" id="description" required />
         <label htmlFor="image">Image</label>
-        <input type="url" id="image" name="image" alt="imagename" />
+        <input type="url" id="image" name="image" alt="imagename" required />
         <div className='ingredient_holder'>
           <label htmlFor="">Ingredients</label>
           {[...Array(ingredients)].map((_, ingredient) => (
@@ -48,7 +46,7 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
               <div className='ingredients_list'>
                 <div>
                   <label htmlFor={`quantity-${ingredient}`}>Quantity</label>
-                  <input type="text" name={`quantity-${ingredient}`} id={`quantity-${ingredient}`} />
+                  <input type="text" name={`quantity-${ingredient}`} id={`quantity-${ingredient}`} required />
                 </div>
                 <div className='ingredient'>
                   <label htmlFor={`ingredient-${ingredient}`}>Ingredient</label>
@@ -63,7 +61,7 @@ const Form = ({ submit, change, recipe, removeHandler }) => {
           </div>
         </div>
         <label htmlFor='instruction'>Instructions</label>
-        <textarea name="instruction" id="instruction" />
+        <textarea name="instruction" id="instruction" required />
         <button type="submit" id="post" value="submit" name="submit" onClick={() => { ingredients && setIngredients(1) }}>Post recipe</button>
 
       </form>

@@ -14,7 +14,7 @@ const Home = () => {
           <div className='list_holder'>
             <h1>4ooDy</h1>
             <p>4ooDy is a recipe app which allows to add and browse recipes</p>
-            <NavLink to='/recipes'><button>Browse recipes</button></NavLink>
+            <NavLink to='/recipes'>Browse recipes</NavLink>
           </div>
         </div>
       </div>
