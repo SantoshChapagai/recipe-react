@@ -5,6 +5,7 @@ import Recipes from './pages/Recipes';
 import AddRecipe from './pages/AddRecipe';
 import Header from './Components/Header';
 import SingleRecipe from './Components/SingleRecipe';
+import Footer from './Components/Footer';
 const App = () => {
   return (
     <div className='app'>
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/recipes/:singlerecipe" element={<SingleRecipe />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 };

@@ -86,6 +86,7 @@ h2 {
 
 .recipes {
   font-family: 'Roboto', serif;
+  min-height: 78vh;
 }
 
 .all_card {
