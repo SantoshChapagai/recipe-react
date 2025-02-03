@@ -2,7 +2,7 @@
   color: white;
   height: 25rem;
   margin: 0 2rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
 }
 
@@ -27,7 +27,7 @@
   padding: 1rem;
   background-color: black;
   border: 1px solid pink;
-  color: pink
+  color: pink;
 }
 
 .home p {
@@ -46,7 +46,7 @@
 .home_container h1,
 .home_container h2,
 .home_container h4 {
-  font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
 .card a {
@@ -82,20 +82,26 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 2rem 0;
+  padding: 1rem;
 }
 
 .recipes {
-  font-family: 'Roboto', serif;
+  font-family: "Roboto", serif;
   min-height: 78vh;
 }
 
 .all_card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: "5px";
+  width: "100%";
+}
+.input_style {
+  color: "red";
 }
 
 /* for mobile */
-@media (max-width:576px) {
+@media (max-width: 576px) {
   .home {
     margin: 0;
   }
