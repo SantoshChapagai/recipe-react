@@ -26,9 +26,7 @@ const Recipes = () => {
   }
   return (
     <div className="recipes">
-      <div className="search">
-        <input onChange={searchInputHandler} className="input_style" />
-      </div>
+      <input onChange={searchInputHandler} className="input_style" />
       <div className="all_card">
         {searchFilter.map((data) => (
           <Card key={data.id} recipe={data} />
