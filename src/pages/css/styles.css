@@ -78,11 +78,12 @@ h2 {
 }
 
 /* styling for recipes */
-.search {
+.input_style {
   display: flex;
   justify-content: center;
-  margin: 2rem 0;
-  padding: 1rem;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem 0.5rem;
 }
 
 .recipes {
@@ -95,9 +96,6 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   gap: "5px";
   width: "100%";
-}
-.input_style {
-  color: "red";
 }
 
 /* for mobile */
