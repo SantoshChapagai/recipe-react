@@ -32,7 +32,7 @@ header a {
   color: white;
 }
 footer{
-  background-color: beige;
+  background-color: rgb(247, 247, 207);
   display: flex;
   justify-content: center;
   align-items: center;
